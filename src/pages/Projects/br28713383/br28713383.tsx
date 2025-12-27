@@ -62,6 +62,36 @@ const Br28713383: React.FC = () => {
         </div>
       </section>
 
+      {/* Руководитель организации */}
+      <section className="about-section orgleader-section">
+        <h2>{t("project_br28713383.sections.orgleader.title")}</h2>
+
+        <div className="leader-card">
+          <div
+            className="leader-photo"
+            style={{
+              backgroundImage: `url(${t(
+                "project_br28713383.sections.orgleader.image"
+              )})`,
+            }}
+          ></div>
+
+          <div className="leader-info">
+            <h3 className="leader-name">
+              {t("project_br28713383.sections.orgleader.name")}
+            </h3>
+
+            <p className="leader-position">
+              {t("project_br28713383.sections.orgleader.position")}
+            </p>
+
+            <p className="leader-email">
+              {t("project_br28713383.sections.orgleader.email")}
+            </p>
+          </div>
+        </div>
+      </section>
+
       {/* Руководитель проекта */}
       <section className="about-section leader-section">
         <h2>{t("project_br28713383.sections.leader.title")}</h2>
@@ -81,12 +111,11 @@ const Br28713383: React.FC = () => {
             <p className="leader-position">
               {t("project_br28713383.sections.leader.position")}
             </p>
-            <p className="leader-email">
-              {t("project_br28713383.sections.leader.email")}
-            </p>
           </div>
         </div>
       </section>
+
+      
 
       {/* Команда проекта */}
       <section className="about-section employees-section">

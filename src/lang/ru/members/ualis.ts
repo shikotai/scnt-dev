@@ -1,13 +1,11 @@
 export default {
   ualis: {
     name: "Шыныбек Уали",
-    position: "Разработчик",
+    position: "Программист",
     degree: "Студент",
-    role: "Программист",
-    affiliation: "Scientific Center for New Technologies",
     email: "ualishynybek@gmail.com",
-    hindex: "будет однажды",
-    image: "/images/members/ualis.png",
+    hindex: "none",
+    image: "/images/members/tursunova-aigul.jpg",
     tabs: {
       bio: "Биография",
       projects: "Научные проекты",
@@ -15,7 +13,7 @@ export default {
     },
     bioTitle: "Профессиональная биография",
     bioText:
-      "работяга.пнг",
+      "С 2025 года сотрудник Scientific Center for New Technologies.",
     projectslist:"Разработка транспортных систем.",
     publicationslist:"I'll write one"
   },

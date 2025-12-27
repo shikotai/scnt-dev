@@ -14,12 +14,17 @@ export default {
           p2: "Одновременно растет мировая потребность в создании новых высокоэффективных материалов для систем хранения энергии, что открывает перспективы для интеграции технологий переработки отходов с производством инновационных углеродно-кремниевых композитов и других функциональных материалов.",
         },
       },
+      orgleader: {
+      title: "Organization Leader",
+      name: "Dr. John Doe",
+      position: "General Director of SCNT",
+      image: "/images/members/placeholder1.jpg"
+      },
       leader: {
         title: "Руководитель проекта",
-        name: "Dr. John Doe",
-        position: "Head of Research Program",
-        email: "johndoe@example.com",
-        image: "/images/members/leader-placeholder.jpg",
+        name: "Сейсенова Акнур Бердибаевна",
+        position: "Ведущий научный сотрудник в области новых материалов и технологий, ДГП НИИ Новых химических технологий и материалов, РГП КазНУ имени аль-Фараби. Признанный эксперт в разработке и внедрении инновационных материалов.",
+        image: "/images/members/seisenova-aknur.jpeg",
       },
       employees: {
         title: "Команда проекта",

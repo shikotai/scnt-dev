@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import NavigationHeader from "../../../components/NavigationHeader/NavigationHeader";
 import Footer from "../../../components/Footer/Footer";
 import { useLang } from "../../../lang/context/LanguageContext";
-import "./uali-shynybek.css";
+import "./members.css";
 
 const UaliShynybek: React.FC = () => {
   const { t } = useLang();
@@ -23,12 +23,10 @@ const UaliShynybek: React.FC = () => {
             <h2 className="profile-name">{t("ualis.name")}</h2>
             <p className="profile-position">{t("ualis.position")}</p>
             <p className="profile-degree">{t("ualis.degree")}</p>
-            <p className="profile-role">{t("ualis.role")}</p>
-            <p className="profile-affiliation">{t("ualis.affiliation")}</p>
             <p className="profile-email">
               Email:{" "}
               <a href={`mailto:${t("ualis.email")}`}>
-                {t("members.ualis.email")}
+                {t("ualis.email")}
               </a>
             </p>
             <p className="profile-index">

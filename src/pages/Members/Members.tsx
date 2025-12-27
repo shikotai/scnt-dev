@@ -10,17 +10,29 @@ const Members: React.FC = () => {
 
   const members = [
     {
+      name: t("m-alibek.name"),
+      position: t("m-alibek.position"),
+      image: "/images/members/mutushev-alibek.jpeg",
+      link: "/members/mutushev-alibek",
+    },
+    {
       name: t("ualis.name"),
       position: t("ualis.position"),
       image: "/images/members/ualis.png",
       link: "/members/uali-shynybek",
     },
     {
-      name: t("placeholder"),
-      position: t("placholder"),
-      image: "/images/members/placeholder1.jpg",
-      link: "/members/placeholder",
+      name: t("taigul.name"),
+      position: t("taigul.position"),
+      image: "/images/members/tursunova-aigul.jpg",
+      link: "/members/tursunova-aigul",
     },
+    {
+      name: t("saknur.name"),
+      position: t("saknur.position"),
+      image: "/images/members/seisenova-aknur.jpeg",
+      link: "/members/seisenova-aknur",
+    }
   ];
 
   return (
