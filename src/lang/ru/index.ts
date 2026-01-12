@@ -11,6 +11,11 @@ import ualis from "./members/ualis"
 import taigul from "./members/taigul";
 import saknur from "./members/saknur"
 import mutushev from "./members/m-alibek"
+import dauren from "./members/dauren";
+import kapizov from "./members/kapizov";
+import aksuluk from "./members/aksuluk";
+import asadyk from "./members/asadyk";
+import buyout from "./buyout/buyout";
 
 export default {
   ...common,
@@ -25,5 +30,10 @@ export default {
   ...ualis,
   ...taigul,
   ...saknur,
-  ...mutushev
+  ...mutushev,
+  ...dauren,
+  ...kapizov,
+  ...aksuluk,
+  ...asadyk,
+  ...buyout
 };

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import NavigationHeader from "../../../components/NavigationHeader/NavigationHeader";
 import Footer from "../../../components/Footer/Footer";
 import { useLang } from "../../../lang/context/LanguageContext";
@@ -6,7 +6,23 @@ import "./members.css";
 
 const MutushevAlibek: React.FC = () => {
   const { t } = useLang();
-  const [activeTab, setActiveTab] = useState<"bio" | "projects" | "publications">("bio");
+  const [activeTab, setActiveTab] = useState<"bio" | "publications">("bio");
+
+  useEffect(() => {
+    document.title = "Alibek Mutushev | SCNT";
+  }, []);
+
+  // If your translation stores ResearcherID like: "N-6736-2017"
+  const researcherId = t("mutushev.researcherid");
+  const researcherUrl =
+    researcherId && researcherId !== "mutushev.researcherid"
+      ? `https://www.webofscience.com/wos/author/record/${researcherId}`
+      : "https://www.webofscience.com/wos/author/search";
+
+  // If your translation stores SciProfiles as FULL url:
+  const sciprofilesRaw = t("mutushev.sciprofiles");
+  const sciprofilesUrl =
+    sciprofilesRaw?.startsWith("http") ? sciprofilesRaw : `https://sciprofiles.com/profile/${sciprofilesRaw}`;
 
   return (
     <div className="member-profile-page">
@@ -17,7 +33,7 @@ const MutushevAlibek: React.FC = () => {
           <div
             className="profile-photo"
             style={{ backgroundImage: "url(/images/members/mutushev-alibek.jpg)" }}
-          ></div>
+          />
 
           <div className="profile-info">
             <h2 className="profile-name">{t("mutushev.name")}</h2>
@@ -28,58 +44,28 @@ const MutushevAlibek: React.FC = () => {
             </p>
 
             <div className="profile-links">
-              <a
-                href={t("mutushev.scopus")}
-                target="_blank"
-                rel="noreferrer"
-              >
+              <a href={t("mutushev.scopus")} target="_blank" rel="noreferrer">
                 <img src="/images/icons/scopus.png" alt="Scopus" />
               </a>
 
-              <a
-                href={t("mutushev.orcid")}
-                target="_blank"
-                rel="noreferrer"
-              >
+              <a href={t("mutushev.orcid")} target="_blank" rel="noreferrer">
                 <img src="/images/icons/orcid.png" alt="ORCID" />
               </a>
 
-              {/* ResearcherID */}
-              <a
-                href="https://www.webofscience.com/wos/author/record/" 
-                target="_blank"
-                rel="noreferrer"
-                title={t("mutushev.researcherid")}
-              >
+              <a href={researcherUrl} target="_blank" rel="noreferrer" title={researcherId}>
                 <img src="/images/icons/researcherid.png" alt="ResearcherID" />
               </a>
 
-              {/* SciProfiles */}
-              <a
-                href={`https://sciprofiles.com/profile/${t("mutushev.sciprofiles")}`}
-                target="_blank"
-                rel="noreferrer"
-              >
+              <a href={sciprofilesUrl} target="_blank" rel="noreferrer">
                 <img src="/images/icons/sciprofiles.png" alt="SciProfiles" />
               </a>
             </div>
           </div>
         </div>
 
-        {/* Tabs */}
         <div className="profile-tabs">
-          <button
-            className={activeTab === "bio" ? "active" : ""}
-            onClick={() => setActiveTab("bio")}
-          >
+          <button className={activeTab === "bio" ? "active" : ""} onClick={() => setActiveTab("bio")}>
             {t("mutushev.tabs.bio")}
-          </button>
-
-          <button
-            className={activeTab === "projects" ? "active" : ""}
-            onClick={() => setActiveTab("projects")}
-          >
-            {t("mutushev.tabs.projects")}
           </button>
 
           <button
@@ -90,9 +76,7 @@ const MutushevAlibek: React.FC = () => {
           </button>
         </div>
 
-        {/* Content */}
         <div className="profile-content">
-
           {activeTab === "bio" && (
             <>
               <h3>{t("mutushev.bioTitle")}</h3>
@@ -100,17 +84,12 @@ const MutushevAlibek: React.FC = () => {
             </>
           )}
 
-          {activeTab === "projects" && (
-            <p style={{ whiteSpace: "pre-line" }}>{t("mutushev.projectslist")}</p>
-          )}
-
           {activeTab === "publications" && (
             <div
               className="profile-publications"
               dangerouslySetInnerHTML={{ __html: t("mutushev.publicationslist") }}
-            ></div>
+            />
           )}
-
         </div>
       </section>
 

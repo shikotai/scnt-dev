@@ -11,6 +11,11 @@ import UaliShynybek from "./pages/Members/uali-shynybek/uali-shynybek";
 import TursunovaAigul from "./pages/Members/tursunova-aigul/tursunova-aigul";
 import SeisenovaAknur from "./pages/Members/seisenova-aknur/seisenova-aknur";
 import MutushevAlibek from "./pages/Members/mutushev-alibek/mutushev-alibek";
+import KapizovOmirzak from "./pages/Members/kapizov-omirzak/kapizov-omirzak";
+import DaurenMukhanov from "./pages/Members/dauren-mukhanov/dauren-mukhanov";
+import KaldybekovaAksulu from "./pages/Members/kaldybekova-aksulu/kaldybekova-aksulu";
+import SadykAliman from "./pages/Members/sadyk-aliman/sadyk-aliman";
+import Buyout from "./pages/Buyout/buyout";
 
 const App: React.FC = () => {
   return (
@@ -27,6 +32,11 @@ const App: React.FC = () => {
         <Route path="/members/tursunova-aigul" element = {<TursunovaAigul />} />
         <Route path="/members/seisenova-aknur" element = {<SeisenovaAknur />} />
         <Route path="/members/mutushev-alibek" element = {<MutushevAlibek />} />
+        <Route path="/members/kapizov-omirzak" element = {<KapizovOmirzak />} />
+        <Route path="/members/dauren-mukhanov" element = {<DaurenMukhanov />} />
+        <Route path="/members/kaldybekova-aksulu" element = {<KaldybekovaAksulu />} />
+        <Route path="/members/sadyk-aliman" element = {<SadykAliman />} />
+        <Route path="/buyout" element={<Buyout />} />
       </Routes>
     </Router>
   );

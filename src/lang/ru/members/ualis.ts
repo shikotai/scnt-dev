@@ -1,8 +1,8 @@
 export default {
   ualis: {
-    name: "Шыныбек Уали",
+    name: "Уәли Шыныбек Нахыпбекұлы",
     position: "Программист",
-    degree: "Студент",
+    degree: "Студент, бакалавр",
     email: "ualishynybek@gmail.com",
     hindex: "none",
     image: "/images/members/tursunova-aigul.jpg",

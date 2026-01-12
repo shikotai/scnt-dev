@@ -29,24 +29,6 @@ const UaliShynybek: React.FC = () => {
                 {t("ualis.email")}
               </a>
             </p>
-            <p className="profile-index">
-              H-index: <span className="highlight">{t("ualis.hindex")}</span>
-            </p>
-
-            <div className="profile-links">
-              <a href="#" target="_blank" rel="noreferrer">
-                <img src="/images/icons/scopus.png" alt="Scopus" />
-              </a>
-              <a href="#" target="_blank" rel="noreferrer">
-                <img src="/images/icons/orcid.png" alt="ORCID" />
-              </a>
-              <a href="#" target="_blank" rel="noreferrer">
-                <img src="/images/icons/scholar.png" alt="Google Scholar" />
-              </a>
-              <a href="#" target="_blank" rel="noreferrer">
-                <img src="/images/icons/linkedin.png" alt="LinkedIn" />
-              </a>
-            </div>
           </div>
         </div>
 
@@ -57,18 +39,6 @@ const UaliShynybek: React.FC = () => {
             onClick={() => setActiveTab("bio")}
           >
             {t("ualis.tabs.bio")}
-          </button>
-          <button
-            className={activeTab === "projects" ? "active" : ""}
-            onClick={() => setActiveTab("projects")}
-          >
-            {t("ualis.tabs.projects")}
-          </button>
-          <button
-            className={activeTab === "publications" ? "active" : ""}
-            onClick={() => setActiveTab("publications")}
-          >
-            {t("ualis.tabs.publications")}
           </button>
         </div>
 

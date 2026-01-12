@@ -26,15 +26,8 @@
   text-align: center;
 }
 
-.about-section h1 {
-  font-size: 14px;
-  margin-bottom: 40px;
-  color: #0b1533;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-}
-
-.about-content p {
+.about-content p,
+.project-content p {
   font-size: 18px;
   line-height: 1.6;
   color: #333;
@@ -51,9 +44,11 @@
   max-width: 1100px;
   flex-wrap: wrap;
   text-align: left;
+  width: 100%;
 }
 
-.about-content {
+.about-content,
+.project-content {
   flex: 1;
   min-width: 280px;
   max-width: 1100px;
@@ -67,34 +62,275 @@
   background-size: cover;
   background-position: center;
   border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
 }
+
+/* ===============================
+   SECTION BACKGROUNDS
+   =============================== */
+.company-section { background-color: #f1f7ff; }
+.mission-section { background-color: #ffffff; }
+.team-section { background-color: #f1f7ff; }
+.partners-section { background-color: #ffffff; }
+.orgleader-section { background-color: #ffffff; }
+.leader-section { background-color: #ffffff; }
+.employees-section { background-color: #f1f7ff; }
+
+/* ===============================
+   LEADER CARDS (CLICKABLE)
+   =============================== */
+.leader-card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  max-width: 900px;
+  flex-wrap: wrap;
+  text-decoration: none;
+  color: inherit;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  padding: 14px;
+  border-radius: 14px;
+}
+
+.leader-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.leader-photo {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background-size: cover;
+  background-position: center;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.leader-info {
+  text-align: left;
+  max-width: 500px;
+}
+
+.leader-name {
+  font-size: 22px;
+  margin-bottom: 8px;
+  color: #0b1533;
+}
+
+.leader-position {
+  font-size: 18px;
+  color: #333;
+}
+
+.leader-email {
+  font-size: 16px;
+  color: #1e5acb;
+}
+
+/* ===============================
+   EMPLOYEES GRID (FIXED)
+   =============================== */
+.employees-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 220px);
+  gap: 28px;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.employee-card {
+  width: 220px;
+  min-height: 280px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+  color: inherit;
+
+  background: #ffffff;
+  border-radius: 14px;
+  padding: 18px 14px;
+
+  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+  transition: transform 0.18s ease, box-shadow 0.18s ease;
+}
+
+.employee-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 22px rgba(0,0,0,0.16);
+}
+
+.employee-card-disabled {
+  opacity: 0.6;
+  pointer-events: none;
+}
+
+.employee-photo {
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  background-size: cover;
+  background-position: center;
+  margin-bottom: 12px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.18);
+}
+
+.employee-name {
+  font-size: 16px;
+  color: #0b1533;
+  margin: 6px 0 4px;
+  text-align: center;
+}
+
+.employee-position {
+  font-size: 13.5px;
+  color: #333;
+  text-align: center;
+  line-height: 1.35;
+
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+/* ===== Publications section ===== */
+
+.partners-section {
+  margin-top: 60px;
+}
+
+.project-content {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+/* ===== Dropdown card ===== */
+
+.dropdown-card {
+  margin-top: 16px;
+  border-radius: 14px;
+  border: 1px solid #dcdcdc;
+  background: #ffffff;
+  overflow: hidden;
+  transition: box-shadow 0.25s ease;
+}
+
+.dropdown-card:hover {
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+}
+
+/* ===== Dropdown header ===== */
+
+.dropdown-header {
+  width: 100%;
+  padding: 16px 20px;
+  background: linear-gradient(135deg, #f4f6fa, #eef1f6);
+  border: none;
+  cursor: pointer;
+
+  font-size: 16px;
+  font-weight: 600;
+  color: #222;
+  text-align: left;
+
+  display: flex;
+  align-content: center;
+  justify-content: space-between;
+}
+
+.dropdown-header:hover {
+  background: linear-gradient(135deg, #eef1f6, #e7ebf2);
+}
+
+/* ===== Arrow ===== */
+
+.arrow {
+  font-size: 18px;
+  transition: transform 0.25s ease;
+}
+
+.arrow.open {
+  transform: rotate(180deg);
+}
+
+/* ===== Dropdown content ===== */
+
+.dropdown-content {
+  padding: 14px 22px 18px;
+  animation: dropdownFade 0.25s ease;
+}
+
+@keyframes dropdownFade {
+  from {
+    opacity: 0;
+    transform: translateY(-4px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ===== Publication list ===== */
 
 .publication-list {
   list-style: none;
   padding: 0;
-  margin: 20px 0;
+  margin: 0;
 }
 
 .publication-list li {
   margin-bottom: 10px;
 }
 
+.publication-list li:last-child {
+  margin-bottom: 0;
+}
+
+/* ===== Publication links ===== */
+
 .publication-list a {
-  color: #1e5acb;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+
   text-decoration: none;
+  font-size: 15px;
+  color: #1f4ed8;
   font-weight: 500;
-  transition: color 0.2s ease;
+
+  transition: color 0.2s ease, transform 0.15s ease;
+}
+
+.publication-list a::before {
+  content: "📄";
+  font-size: 16px;
 }
 
 .publication-list a:hover {
-  color: #0b1533;
-  text-decoration: underline;
+  color: #163bbf;
+  transform: translateX(2px);
 }
 
-.orgleader-section {
-  background-color: #ffffff;
+/* ===== Responsive ===== */
+
+@media (max-width: 768px) {
+  .dropdown-header {
+    font-size: 15px;
+    padding: 14px 16px;
+  }
+
+  .dropdown-content {
+    padding: 12px 16px;
+  }
+
+  .publication-list a {
+    font-size: 14px;
+  }
 }
+
 
 /* ===============================
    BACK BUTTON
@@ -112,7 +348,6 @@
   border: 2px solid #0b1533;
   padding: 10px 20px;
   border-radius: 8px;
-  transition: background 0.3s ease, color 0.3s ease;
 }
 
 .back-button:hover {
@@ -121,191 +356,38 @@
 }
 
 /* ===============================
-   SECTION BACKGROUNDS
-   =============================== */
-.company-section {
-  background-color: #f1f7ff;
-}
-
-.mission-section {
-  background-color: #ffffff;
-}
-
-.team-section {
-  background-color: #f1f7ff;
-}
-
-.partners-section {
-  background-color: #ffffff;
-}
-
-/* ===============================
-   PROJECT LEADER SECTION
-   =============================== */
-.leader-section {
-  background-color: #ffffff;
-}
-
-.leader-card {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 30px;
-  max-width: 900px;
-  flex-wrap: wrap;
-}
-
-.leader-photo {
-  width: 200px;
-  height: 200px;
-  background-size: cover;
-  background-position: center;
-  border-radius: 50%;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
-
-.leader-info {
-  text-align: left;
-  max-width: 500px;
-}
-
-.leader-name {
-  font-size: 22px;
-  color: #0b1533;
-  margin-bottom: 8px;
-}
-
-.leader-position {
-  font-size: 18px;
-  color: #333;
-  margin-bottom: 4px;
-}
-
-.leader-email {
-  font-size: 16px;
-  color: #1e5acb;
-}
-
-/* ===============================
-   EMPLOYEES GRID
-   =============================== */
-.employees-section {
-  background-color: #f1f7ff;
-}
-
-.employees-grid {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 40px;
-  margin-top: 20px;
-}
-
-.employee-card {
-  display: block;
-  text-decoration: none;
-  color: inherit;
-  transition: transform 0.18s ease, box-shadow 0.18s ease;
-  border-radius: 12px; /* makes lift look better */
-}
-
-.employee-card:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
-}
-
-.employee-card-disabled {
-  opacity: 0.6;
-  cursor: default;
-  pointer-events: none;
-}
-
-.employee-photo {
-  width: 150px;
-  height: 150px;
-  border-radius: 50%;
-  background-size: cover;
-  background-position: center;
-  margin: 0 auto 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
-
-.employee-name {
-  font-size: 16px;
-  color: #0b1533;
-  margin: 5px 0;
-}
-
-.employee-position {
-  font-size: 14px;
-  color: #333;
-}
-
-.employee-card-disabled {
-  opacity: 0.6;
-  pointer-events: none;
-  cursor: default;
-} 
-
-/* ===============================
-   RESPONSIVE DESIGN
+   RESPONSIVE BREAKPOINTS
    =============================== */
 
-/* Tablets (≤992px) */
-@media (max-width: 992px) {
-  .about-section {
-    padding: 50px 15px;
-  }
-
-  .about-section h2 {
-    font-size: 24px;
-  }
-
-  .about-content p {
-    font-size: 16px;
-  }
-
-  .about-image {
-    height: 260px;
-  }
-
-  .leader-photo {
-    width: 160px;
-    height: 160px;
+/* Laptops */
+@media (max-width: 1100px) {
+  .employees-grid {
+    grid-template-columns: repeat(3, 220px);
   }
 }
 
-/* Phones (≤768px) */
-@media (max-width: 768px) {
+/* Tablets */
+@media (max-width: 840px) {
+  .employees-grid {
+    grid-template-columns: repeat(2, 200px);
+  }
+
+  .employee-card {
+    width: 200px;
+    min-height: 260px;
+  }
+
+  .employee-photo {
+    width: 120px;
+    height: 120px;
+  }
+}
+
+/* Phones */
+@media (max-width: 520px) {
   .about-inner {
     flex-direction: column;
-    align-items: center;
     text-align: center;
-    gap: 25px;
-  }
-
-  .about-content {
-    text-align: center;
-    max-width: 95%;
-  }
-
-  .about-section h2 {
-    font-size: 22px;
-    margin-bottom: 25px;
-  }
-
-  .about-image {
-    width: 100%;
-    height: 240px;
-  }
-
-  .about-content p {
-    font-size: 15px;
-  }
-
-  .back-button {
-    font-size: 14px;
-    padding: 8px 18px;
   }
 
   .leader-card {
@@ -318,45 +400,45 @@
   }
 
   .employees-grid {
-    gap: 25px;
+    grid-template-columns: 1fr;
+    max-width: 360px;
+    margin: 0 auto;
   }
 
   .employee-card {
-    width: 120px;
+    width: 100%;
+    min-height: 0;
+    flex-direction: row;
+    gap: 14px;
+    align-items: center;
+    padding: 14px;
   }
 
   .employee-photo {
-    width: 110px;
-    height: 110px;
+    width: 78px;
+    height: 78px;
+    margin: 0;
+  }
+
+  .employee-name,
+  .employee-position {
+    text-align: left;
+  }
+
+  /* Mobile */
+@media (max-width: 520px) {
+  .pub-header {
+    padding: 14px 14px;
+  }
+  .pub-title {
+    font-size: 15px;
+  }
+  .pub-list,
+  .pub-empty {
+    padding: 12px 14px 14px;
   }
 }
 
-/* Small phones (≤480px) */
-@media (max-width: 480px) {
-  .about-section {
-    padding: 40px 10px;
-  }
+  
 
-  .about-section h2 {
-    font-size: 20px;
-  }
-
-  .about-image {
-    height: 200px;
-  }
-
-  .about-content p {
-    font-size: 14px;
-    line-height: 1.5;
-  }
-
-  .leader-photo {
-    width: 130px;
-    height: 130px;
-  }
-
-  .employee-photo {
-    width: 100px;
-    height: 100px;
-  }
 }

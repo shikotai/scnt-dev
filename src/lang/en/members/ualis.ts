@@ -1,8 +1,8 @@
 export default {
   ualis: {
-    name: "Uali Shynybek",
+    name: "Uali Shynybek6 Nakhypbekuly",
     position: "Developer",
-    degree: "Student",
+    degree: "Student6 undergr. bachelor",
     role: "Programmer",
     affiliation: "Scientific Center for New Technologies",
     email: "ualishynybek@gmail.com",
@@ -14,8 +14,6 @@ export default {
     },
     bioTitle: "Professional Biography",
     bioText:
-      "Imagine this section filled with achievements, experience, and research contributions.",
-    projectslist:"Разработка транспортных систем.",
-    publicationslist:"I'll write one later."
+      "From 2025, is the web-developer at Scientific Center for New Technologies.",
   },
 };

@@ -16,7 +16,7 @@ const SeisenovaAknur: React.FC = () => {
         <div className="profile-header">
           <div
             className="profile-photo"
-            style={{ backgroundImage: "url(/images/members/seisenova-aknur.jpe  g)" }}
+            style={{ backgroundImage: "url(/images/members/seisenova-aknur.jpeg)" }}
           ></div>
 
           <div className="profile-info">

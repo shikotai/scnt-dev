@@ -8,6 +8,12 @@ import projects from "./projects";
 import br28713383 from "./projects/br28713383";
 import members from "./members"; 
 import ualis from "./members/ualis"
+import taigul from "./members/taigul";
+import saknur from "./members/saknur"
+import mutushev from "./members/m-alibek"
+import dauren from "./members/dauren";
+import kapizov from "./members/kapizov";
+import buyout from "./buyout/buyout";
 
 export default {
   ...common,
@@ -19,5 +25,11 @@ export default {
   ...projects,
   ...br28713383,
   members,
-  ...ualis
+  ...ualis,
+  ...taigul,
+  ...saknur,
+  ...mutushev,
+  ...dauren,
+  ...kapizov,
+  ...buyout
 };

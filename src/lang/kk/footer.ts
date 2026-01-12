@@ -5,6 +5,8 @@ export default {
       about: "Біз туралы",
       news: "Жаңалықтар",
       projects: "Жобалар",
+      members: "Қызметкерлер",
+      buyout: "Сатып алу",
     },
     contact: {
       addressLabel: "Мекенжай:",

@@ -10,10 +10,28 @@ const Members: React.FC = () => {
 
   const members = [
     {
-      name: t("m-alibek.name"),
-      position: t("m-alibek.position"),
-      image: "/images/members/mutushev-alibek.jpeg",
+      name: t("mutushev.name"),
+      position: t("mutushev.position"),
+      image: "/images/members/mutushev-alibek.jpg",
       link: "/members/mutushev-alibek",
+    },
+    {
+      name: t("saknur.name"),
+      position: t("saknur.position"),
+      image: "/images/members/seisenova-aknur.jpeg",
+      link: "/members/seisenova-aknur",
+    },
+    {
+      name: t("kapizov.name"),
+      position: `${t("kapizov.position")}, ${t("kapizov.degree")}`,
+      image: "/images/members/kapizov-omirzak.jpg",
+      link: "/members/kapizov-omirzak",
+    },
+    {
+      name: t("dauren.name"),
+      position: `${t("dauren.position")}, ${t("dauren.degree")}`,
+      image: "/images/members/mukhanov-dauren.jpg",
+      link: "/members/dauren-mukhanov",
     },
     {
       name: t("ualis.name"),
@@ -27,12 +45,6 @@ const Members: React.FC = () => {
       image: "/images/members/tursunova-aigul.jpg",
       link: "/members/tursunova-aigul",
     },
-    {
-      name: t("saknur.name"),
-      position: t("saknur.position"),
-      image: "/images/members/seisenova-aknur.jpeg",
-      link: "/members/seisenova-aknur",
-    }
   ];
 
   return (
@@ -48,7 +60,7 @@ const Members: React.FC = () => {
               <div
                 className="members-photo"
                 style={{ backgroundImage: `url(${person.image})` }}
-              ></div>
+              />
               <h3 className="members-name">{person.name}</h3>
               <p className="members-position">{person.position}</p>
             </Link>

@@ -39,6 +39,12 @@
 .members-card {
   width: 220px;
   text-align: center;
+  text-decoration: none;
+}
+
+.members-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
 }
 
 .members-photo {

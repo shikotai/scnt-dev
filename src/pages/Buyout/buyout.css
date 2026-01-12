@@ -1,0 +1,176 @@
+.buyout-page {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  min-height: 100vh;
+  overflow-x: hidden;
+  font-family: "Open Sans", sans-serif;
+  background: #ffffff;
+}
+
+/* Top light-blue header area */
+.buyout-hero {
+  background: #ffffff;
+  padding: 70px 20px 90px;
+  text-align: center;
+}
+
+.buyout-title {
+  margin: 0;
+  font-size: 34px;
+  letter-spacing: 2px;
+  color: #0b1533;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.buyout-subtitle {
+  margin: 18px auto 0;
+  max-width: 760px;
+  font-size: 16px;
+  color: #7a8599;
+  line-height: 1.6;
+}
+
+/* Content */
+.buyout-content {
+  background: #ffffff;
+  padding: 38px 16px 70px;
+}
+
+.buyout-container {
+  max-width: 1050px;
+  margin: 0 auto;
+}
+
+/* One accordion item */
+.buyout-item {
+  max-width: 980px;
+  margin: 0 auto 22px;
+}
+
+/* The clickable card */
+.buyout-card {
+  width: 100%;
+  border: none;
+  cursor: pointer;
+
+  background: #ffffff;
+  border-radius: 14px;
+  box-shadow: 0 10px 26px rgba(0, 0, 0, 0.08);
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 18px;
+
+  padding: 18px 22px;
+  text-align: left;
+}
+
+.buyout-card.open {
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.buyout-card-title {
+  font-size: 16px;
+  font-weight: 700;
+  color: #0b1533;
+  line-height: 1.35;
+}
+
+/* Chevron */
+.buyout-chevron {
+  font-size: 18px;
+  color: #0b1533;
+  transition: transform 0.2s ease;
+}
+
+.buyout-chevron.open {
+  transform: rotate(180deg);
+}
+
+/* Dropdown (collapsible) */
+.buyout-dropdown {
+  background: #ffffff;
+  box-shadow: 0 10px 26px rgba(0, 0, 0, 0.08);
+  border-bottom-left-radius: 14px;
+  border-bottom-right-radius: 14px;
+
+  border-top: 1px solid #eef1f6;
+
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.25s ease;
+}
+
+.buyout-dropdown.open {
+  max-height: 600px; /* enough for many files */
+}
+
+/* File list */
+.buyout-files {
+  list-style: none;
+  padding: 14px 22px 18px;
+  margin: 0;
+}
+
+.buyout-file-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 8px 0;
+}
+
+
+.buyout-file-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  color: #1e5acb;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.buyout-file-link:hover {
+  text-decoration: underline;
+}
+
+.buyout-file-icon {
+  font-size: 16px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .buyout-hero {
+    padding: 55px 16px 70px;
+  }
+
+  .buyout-title {
+    font-size: 26px;
+    letter-spacing: 1.2px;
+  }
+
+  .buyout-card-title {
+    font-size: 14px;
+  }
+
+  .buyout-card {
+    padding: 16px 14px;
+  }
+
+  .buyout-files {
+    padding: 12px 14px 16px;
+  }
+}
+
+@media (max-width: 420px) {
+  .buyout-title {
+    font-size: 22px;
+  }
+
+  .buyout-subtitle {
+    font-size: 14px;
+  }
+}

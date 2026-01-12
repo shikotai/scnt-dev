@@ -3,7 +3,8 @@ export default {
     about: "Біз туралы",
     news: "Жаңалықтар",
     projects: "Жобалар",
-    members:"Қызметкерлер"
+    members:"Қызметкерлер",
+    buyout: "Сатып алу",
   },
   lang: {
     ru: "Рус",

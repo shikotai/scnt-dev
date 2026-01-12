@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import NavigationHeader from "../../../components/NavigationHeader/NavigationHeader";
 import Footer from "../../../components/Footer/Footer";
 import "./br28713383.css";
@@ -8,18 +8,42 @@ import { useLang } from "../../../lang/context/LanguageContext";
 const Br28713383: React.FC = () => {
   const { t } = useLang();
 
+  // Dropdown states for publications
+  const [openArticles, setOpenArticles] = useState(false);
+  const [openCertificates, setOpenCertificates] = useState(false);
+  const [openPatents, setOpenPatents] = useState(false);
+  const [openApplications, setOpenApplications] = useState(false);
+
   const employees = [
+    {
+      name: t("mutushev.name"),
+      position: t("mutushev.position"),
+      image: "/images/members/mutushev-alibek.jpg",
+      link: "/members/mutushev-alibek",
+    },
+    {
+      name: t("saknur.name"),
+      position: t("saknur.position"),
+      image: "/images/members/seisenova-aknur.jpeg",
+      link: "/members/seisenova-aknur",
+    },
+    {
+      name: t("kapizov.name"),
+      position: t("kapizov.position"),
+      image: "/images/members/kapizov-omirzak.jpg",
+      link: "/members/kapizov-omirzak",
+    },
+    {
+      name: t("dauren.name"),
+      position: t("dauren.position"),
+      image: "/images/members/mukhanov-dauren.jpg",
+      link: "/members/dauren-mukhanov",
+    },
     {
       name: t("ualis.name"),
       position: t("ualis.position"),
       image: "/images/members/ualis.png",
       link: "/members/uali-shynybek",
-    },
-    {
-      name: t("placeholder"),
-      position: t("placeholder"),
-      image: "/images/members/placeholder.jpg",
-      link: null,
     },
   ];
 
@@ -66,7 +90,7 @@ const Br28713383: React.FC = () => {
       <section className="about-section orgleader-section">
         <h2>{t("project_br28713383.sections.orgleader.title")}</h2>
 
-        <div className="leader-card">
+        <Link to="/members/mutushev-alibek" className="leader-card">
           <div
             className="leader-photo"
             style={{
@@ -89,13 +113,14 @@ const Br28713383: React.FC = () => {
               {t("project_br28713383.sections.orgleader.email")}
             </p>
           </div>
-        </div>
+        </Link>
       </section>
 
       {/* Руководитель проекта */}
       <section className="about-section leader-section">
         <h2>{t("project_br28713383.sections.leader.title")}</h2>
-        <div className="leader-card">
+
+        <Link to="/members/seisenova-aknur" className="leader-card">
           <div
             className="leader-photo"
             style={{
@@ -104,18 +129,18 @@ const Br28713383: React.FC = () => {
               )})`,
             }}
           ></div>
+
           <div className="leader-info">
             <h3 className="leader-name">
               {t("project_br28713383.sections.leader.name")}
             </h3>
+
             <p className="leader-position">
               {t("project_br28713383.sections.leader.position")}
             </p>
           </div>
-        </div>
+        </Link>
       </section>
-
-      
 
       {/* Команда проекта */}
       <section className="about-section employees-section">
@@ -123,7 +148,6 @@ const Br28713383: React.FC = () => {
         <div className="employees-grid">
           {employees.map((emp, index) =>
             emp.link ? (
-              // CLICKABLE card
               <Link key={index} to={emp.link} className="employee-card">
                 <div
                   className="employee-photo"
@@ -133,7 +157,6 @@ const Br28713383: React.FC = () => {
                 <p className="employee-position">{emp.position}</p>
               </Link>
             ) : (
-              // NON-CLICKABLE card
               <div key={index} className="employee-card employee-card-disabled">
                 <div
                   className="employee-photo"
@@ -147,44 +170,195 @@ const Br28713383: React.FC = () => {
         </div>
       </section>
 
-      {/* Публикации */}
-      <section className="about-section partners-section">
-        <h2>{t("project_br28713383.sections.publications.title")}</h2>
-        <div className="about-inner">
-          <div className="project-content">
-            <p>{t("project_br28713383.sections.publications.paragraph")}</p>
-            <ul className="publication-list">
+  {/* Публикации */}
+  <section className="about-section partners-section">
+    <h2>{t("project_br28713383.sections.publications.title")}</h2>
+
+    <div className="about-inner">
+      <div className="project-content">
+        <p>{t("project_br28713383.sections.publications.paragraph")}</p>
+
+        {/* ===== Научные статьи ===== */}
+        <div className="dropdown-card">
+          <button
+            className="dropdown-header"
+            onClick={() => setOpenArticles((p) => !p)}
+          >
+            📄 {t("project_br28713383.sections.publications.groups.articles")}
+            <span className={`arrow ${openArticles ? "open" : ""}`}>▾</span>
+          </button>
+
+          {openArticles && (
+            <ul className="publication-list dropdown-content">
               <li>
                 <a
                   href="/files/project1/processes-13-02722-v2.pdf"
-                  target="_blank"
-                  rel="noopener noreferrer"
+                  download
                 >
                   {t("project_br28713383.sections.publications.list.paper1")}
                 </a>
               </li>
-              <li>
-                <a
-                  href="/files/project1/Acceptance-Certificate-processes-3788544.pdf"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  {t("project_br28713383.sections.publications.list.paper2")}
-                </a>
-              </li>
+
               <li>
                 <a
                   href="/files/project1/academic-journal-physical-chemical-sciences-2025.pdf"
-                  target="_blank"
-                  rel="noopener noreferrer"
+                  download
                 >
                   {t("project_br28713383.sections.publications.list.paper3")}
                 </a>
               </li>
+
+              <li>
+                <a
+                  href="/files/project1/Vestnik Shakarim (4) 2025 SCNT.pdf"
+                  download
+                >
+                  {t("project_br28713383.sections.publications.list.paper4")}
+                </a>
+              </li>
+
+              <li>
+                <a
+                  href="files/project1/Тезис-1.pdf"
+                  download
+                >
+                  {t("project_br28713383.sections.publications.list.paper2")}
+                </a>
+              </li>
             </ul>
-          </div>
+          )}
         </div>
-      </section>
+
+        {/* ===== Сертификаты и акты ===== */}
+        <div className="dropdown-card">
+          <button
+            className="dropdown-header"
+            onClick={() => setOpenCertificates((p) => !p)}
+          >
+            📑 {t("project_br28713383.sections.publications.groups.certificates")}
+            <span className={`arrow ${openCertificates ? "open" : ""}`}>▾</span>
+          </button>
+
+          {openCertificates && (
+            <ul className="publication-list dropdown-content">
+              <li>
+                <a href="/files/project1/Свидетельство (1).pdf" download>
+                  {t("project_br28713383.sections.publications.list.paper9")}
+                </a>
+              </li>
+
+              <li>
+                <a href="/files/project1/Свидетельство (2).pdf" download>
+                  {t("project_br28713383.sections.publications.list.paper10")}
+                </a>
+              </li>
+
+              <li>
+                <a href="/files/project1/Свидетельство (3).pdf" download>
+                  {t("project_br28713383.sections.publications.list.paper11")}
+                </a>
+              </li>
+
+              <li>
+                <a href="/files/project1/Свидетельство (4).pdf" download>
+                  {t("project_br28713383.sections.publications.list.paper12")}
+                </a>
+              </li>
+
+              <li>
+                <a href="/files/project1/Свидетельство-1.pdf" download>
+                  {t("project_br28713383.sections.publications.list.paper13")}
+                </a>
+              </li>
+            </ul>
+          )}
+        </div>
+
+        {/* ===== Патенты ===== */}
+        <div className="dropdown-card">
+          <button
+            className="dropdown-header"
+            onClick={() => setOpenPatents((p) => !p)}
+          >
+            🧾 {t("project_br28713383.sections.publications.groups.patents")}
+            <span className={`arrow ${openPatents ? "open" : ""}`}>▾</span>
+          </button>
+
+          {openPatents && (
+            <ul className="publication-list dropdown-content">
+              <li>
+                <a
+                  href="/files/project1/Патент на ПМ №11565 от 24.09.2025.pdf"
+                  download
+                >
+                  {t("project_br28713383.sections.publications.list.paper7")}
+                </a>
+              </li>
+
+              <li>
+                <a
+                  href="/files/project1/Патент на ПМ №11612 от 24.09.2025.pdf"
+                  download
+                >
+                  {t("project_br28713383.sections.publications.list.paper8")}
+                </a>
+              </li>
+              <li>
+                <a href="/files/project1/VPB5V.pdf" download>
+                  {t("project_br28713383.sections.publications.list.paper5")}
+                </a>
+              </li>
+              <li>
+                <a href="/files/project1/Заявление (6).pdf" download>
+                  {t("project_br28713383.sections.publications.list.paper6")}
+                </a>
+              </li>
+
+              <li>
+                <a href="/files/project1/Заявление (8).pdf" download>
+                  {t("project_br28713383.sections.publications.list.paper14")}
+                </a>
+              </li>
+            </ul>
+          )}
+        </div>
+
+        {/* ===== ICMRP ===== */}
+        <div className="dropdown-card">
+          <button
+            className="dropdown-header"
+            onClick={() => setOpenApplications((p) => !p)}
+          >
+            🧾  {t("project_br28713383.sections.publications.groups.icmrp")}
+            <span className={`arrow ${openApplications ? "open" : ""}`}>▾</span>
+          </button>
+
+          {openApplications && (
+            <ul className="publication-list dropdown-content">
+              <li>
+                <a href="\files\project1\Сертификат-Kapizov Omirzak Sembiuly.pdf" download>
+                  {t("project_br28713383.sections.publications.list.paper15")}
+                </a>
+              </li>
+              <li>
+                <a href="\files\project1\Seisenova Aknur Berdibayevna-2.pdf" download>
+                  {t("project_br28713383.sections.publications.list.paper16")}
+                </a>
+              </li>
+              <li>
+                <a href="\files\project1\Сертификат-Oryngaliyeva Sandugash.pdf" download>
+                  {t("project_br28713383.sections.publications.list.paper17")}
+                </a>
+              </li>
+              
+            </ul>
+          )}
+        </div>
+
+      </div>
+    </div>
+  </section>
+
 
       {/* Назад */}
       <div className="back-button-wrapper">

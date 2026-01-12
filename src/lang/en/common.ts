@@ -3,7 +3,8 @@ export default {
     about: "About Us",
     news: "News",
     projects: "Projects",
-    members: "Employees"
+    members: "Employees",
+    buyout: "Procurement",
   },
   lang: {
     ru: "Rus",

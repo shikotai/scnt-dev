@@ -5,6 +5,8 @@ export default {
       about: "О нас",
       news: "Новости",
       projects: "Проекты",
+      members: "Сотрудники",
+      buyout: "Закупка",
     },
     contact: {
       addressLabel: "Адрес:",

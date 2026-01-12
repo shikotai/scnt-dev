@@ -53,9 +53,26 @@ const NavigationHeader: React.FC = () => {
           <NavLink to="/members" onClick={() => setMenuOpen(false)}>
             {t("nav.members") as string}
           </NavLink>
+          <NavLink to="/buyout" onClick={() => setMenuOpen(false)}>
+            {t("nav.buyout") as string}
+          </NavLink>
 
           {/* ✅ Language Switcher */}
           <div className="lang-toggle">
+            <button
+              onClick={() => changeLang("kk")}
+              className={`lang-btn ${lang === "kk" ? "active" : ""}`}
+              title={t("lang.kk") as string}
+            >
+              <span className="fi fi-kz"></span>
+            </button>
+            <button
+              onClick={() => changeLang("en")}
+              className={`lang-btn ${lang === "en" ? "active" : ""}`}
+              title={t("lang.en") as string}
+            >
+              <span className="fi fi-us"></span>
+            </button>
             <button
               onClick={() => changeLang("ru")}
               className={`lang-btn ${lang === "ru" ? "active" : ""}`}
@@ -64,21 +81,7 @@ const NavigationHeader: React.FC = () => {
               <span className="fi fi-ru"></span>
             </button>
 
-            <button
-              onClick={() => changeLang("en")}
-              className={`lang-btn ${lang === "en" ? "active" : ""}`}
-              title={t("lang.en") as string}
-            >
-              <span className="fi fi-us"></span>
-            </button>
-
-            <button
-              onClick={() => changeLang("kk")}
-              className={`lang-btn ${lang === "kk" ? "active" : ""}`}
-              title={t("lang.kk") as string}
-            >
-              <span className="fi fi-kz"></span>
-            </button>
+            
           </div>
         </nav>
       </div>

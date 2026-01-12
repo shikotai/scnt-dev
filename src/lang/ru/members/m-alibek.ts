@@ -87,13 +87,15 @@ SciProfiles: 1745633
     Q1 (96% percentile)
   </li><br>
 
+  <li> <b>Полный список научных трудов и патентов</b><br> Документ Microsoft Word (DOCX) со всеми публикациями, патентами и сертификатами.<br> <a href="/files/mutushev/Мутушев А.Ж.-список научных трудов.docx" target="_blank" rel="noopener noreferrer" download> 📄 Скачать файл (DOCX) </a> </li><br>
+
 </ol>
 
 <h3>Патенты и авторские свидетельства</h3>
 
 <p>Всего: <b>42 патента</b> (полезные модели, изобретения, авторские свидетельства).</p>
 
-<ol start="43">
+<ol start="1">
 
   <li>
     <b>Способ получения аморфного диоксида кремния…</b><br>
@@ -122,6 +124,8 @@ SciProfiles: 1745633
     Свидетельство №79202 от 08.11.2021
   </li><br>
 
+  <li> <b>Полный список научных трудов и патентов</b><br> Документ Microsoft Word (DOCX) со всеми публикациями, патентами и сертификатами.<br> <a href="/files/mutushev/Мутушев А.Ж.-список научных трудов.docx" target="_blank" rel="noopener noreferrer" download> 📄 Скачать файл (DOCX) </a> </li><br>
+
 </ol>
 
 <h3>Повышение квалификации и стажировки</h3>
@@ -137,6 +141,7 @@ SciProfiles: 1745633
   <li>ISO 45001:2018 — Alison, 2025</li><br>
   <li>Advanced Chemistry — Alison, 2025</li><br>
   <li>Intellectual Property Job Simulation — LifeArc, 2025</li><br>
+  <li> <b>Полный список научных трудов и патентов</b><br> Документ Microsoft Word (DOCX) со всеми публикациями, патентами и сертификатами.<br> <a href="/files/mutushev/Мутушев А.Ж.-список научных трудов.docx" target="_blank" rel="noopener noreferrer" download> 📄 Скачать файл (DOCX) </a> </li><br>
 </ol>
     `,
   },

@@ -1,12 +1,12 @@
 export default {
   ualis: {
-    name: "Шыныбек Уәли",
+    name: "Уәли Шыныбек Нахыпбекұлы",
     position: "Программист",
-    degree: "Студент",
+    degree: "Студент, бакалавр",
     role: "Программист",
     affiliation: "Scientific Center for New Technologies",
     email: "ualishynybek@gmail.com",
-    hindex: "6 7",
+    hindex: "67",
     tabs: {
       bio: "Өмірбаян",
       projects: "Ғылыми жобалар",
@@ -14,8 +14,6 @@ export default {
     },
     bioTitle: "Кәсіби өмірбаян",
     bioText:
-      "жеский работникпымғо",
-    projectslist:"Разработка транспортных систем.",
-    publicationslist:"I'll write one later."
+      "2025 жылдан бастап Scientific Center for New Technologies-те Web-программист.",
   },
 };
