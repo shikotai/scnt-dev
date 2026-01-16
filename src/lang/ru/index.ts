@@ -15,7 +15,24 @@ import dauren from "./members/dauren";
 import kapizov from "./members/kapizov";
 import aksuluk from "./members/aksuluk";
 import asadyk from "./members/asadyk";
+import ainurm from "./members/ainurm";
+import aimang from "./members/aimang";
+import tzhanar from "./members/tzhanar";
+import ayazhans from "./members/ayazhans";
+import serzhan from "./members/serzhan";
+import amira from "./members/amira";
+import gaidarb from "./members/gaidarb";
+import aidam from "./members/aidam";
+import anazerke from "./members/anazerke";
 import buyout from "./buyout/buyout";
+import nasiya from "./members/nasiya";
+import sandugasho from "./members/sandugasho";
+import aitzhan from "./members/aitzhan";
+import khalima from "./members/khalima";
+import dianak from "./members/dianak";
+import gulnara from "./members/gulnara";
+import zhanat from "./members/zhanat";
+import alfiya from "./members/alfiya";
 
 export default {
   ...common,
@@ -35,5 +52,22 @@ export default {
   ...kapizov,
   ...aksuluk,
   ...asadyk,
+  ...ainurm,
+  ...aimang,
+  ...tzhanar,
+  ...ayazhans,
+  ...serzhan,
+  ...amira,
+  ...gaidarb,
+  ...aidam,
+  ...anazerke,
+  ...aitzhan,
+  ...nasiya,
+  ...sandugasho,
+  ...dianak,
+  ...khalima,
+  ...gulnara,
+  ...zhanat,
+  ...alfiya,
   ...buyout
 };

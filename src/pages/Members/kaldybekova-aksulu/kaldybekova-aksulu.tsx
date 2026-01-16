@@ -16,7 +16,7 @@ const KaldybekovaAksulu: React.FC = () => {
         <div className="profile-header">
           <div
             className="profile-photo"
-            style={{ backgroundImage: "url(/images/members/placeholder.jpg)" }}
+            style={{ backgroundImage: "url(/images/members/kaldybekova-aksulu.jpeg)" }}
           ></div>
 
           <div className="profile-info">
