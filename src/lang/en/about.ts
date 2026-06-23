@@ -9,7 +9,7 @@ export default {
       mission: {
         title: "Mission and Goals",
         paragraph1:
-          'The main mission of LLP “Scientific Center for New Technologies” and LLP “AlAkSan” is to create, develop, and implement innovative technologies that promote technological progress, sustainable development, and enhance the competitiveness of domestic science and industry on a global scale. Our work is aimed at transforming scientific ideas into practical solutions applied in key sectors — from medicine and ecology to energy and agriculture.',
+          'The main mission of LLP “Scientific Center for New Technologies” is to create, develop, and implement innovative technologies that promote technological progress, sustainable development, and enhance the competitiveness of domestic science and industry on a global scale. Our work is aimed at transforming scientific ideas into practical solutions applied in key sectors — from medicine and ecology to energy and agriculture.',
       },
       team: {
         title: "Our Team",

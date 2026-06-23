@@ -5,16 +5,17 @@ export default {
     degree: "Студент, бакалавр",
     email: "ualishynybek@gmail.com",
     hindex: "none",
-    image: "/images/members/tursunova-aigul.jpg",
+    image: "/images/members/uali-shynybek.jpg",
     tabs: {
       bio: "Биография",
       projects: "Научные проекты",
       publications: "Публикации",
     },
     bioTitle: "Профессиональная биография",
-    bioText:
-      "С 2025 года сотрудник Scientific Center for New Technologies.",
-    projectslist:"Разработка транспортных систем.",
-    publicationslist:"I'll write one"
+bioText: `Уәли Шыныбек Нахыпбекұлы - программист в ТОО "Scientific Center for New Technologies".
+
+Студент образовательной программы Data Science Международного университета информационных технологий. Обладает практическими навыками анализа и обработки данных с использованием Python (NumPy, Pandas) и PostgreSQL, опытом работы с алгоритмами машинного обучения и анализа данных (SciPy, TensorFlow, PyTorch), а также визуализации данных в Power BI. Занимается построением симуляций и графиков в Python и MATLAB. Имеет опыт фронтенд-разработки с использованием React, TypeScript, HTML и CSS, а также базовые знания Java. 
+`,
+
   },
 };

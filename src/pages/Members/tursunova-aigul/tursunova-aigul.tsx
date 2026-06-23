@@ -47,7 +47,7 @@ const TursunovaAigul: React.FC = () => {
           {activeTab === "bio" && (
             <>
               <h3>{t("taigul.bioTitle")}</h3>
-              <p>{t("taigul.bioText")}</p>
+              <p style={{ whiteSpace: "pre-line" }}>{t("taigul.bioText")}</p>
             </>
           )}
 

@@ -7,12 +7,13 @@ export default {
       projects: "Projects",
       members: "Members",
       buyout: "Procurement",
+      partners: "Partners"
     },
     contact: {
       addressLabel: "Address:",
       addressValue: "Kazakhstan, Almaty, Abay Ave., 191",
       phoneLabel: "Phone:",
-      phoneValue: "+7 (705) 522-10-54",
+      phoneValue: "+7 (747) 628 23 60",
       emailLabel: "Email:",
       emailValue: "scnt.kz@gmail.com",
     },

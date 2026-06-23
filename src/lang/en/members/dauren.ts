@@ -17,7 +17,11 @@ export default {
     },
 
     bioTitle: "Professional Biography",
-    bioText: `Dauren Kabdrakimovich Mukhanov is a Researcher at the Scientific Center for New Technologies (SCNT) and a PhD student.`,
+    bioText: `Dauren Kabdrakimovich Mukhanov is a Researcher at the Scientific Center for New Technologies (SCNT) and a PhD student.
+    
+    D.K. Mukhanov's scientific activity is related to the development and research of functional materials, including carbon and carbon-silicon systems used in air purification, ecology and sustainable development. His research covers both fundamental aspects of materials science and applied issues of creating effective filtration and sorption materials.
+
+Mukhanov D.K. is the author of publications in international peer–reviewed journals indexed in the Scopus and Web of Science databases (Q1-Q2), and actively participates in interdisciplinary research in the field of materials chemistry, ecology and engineering technologies.`,
 
     publicationsTitle: "Main Publications",
     publicationslist: `

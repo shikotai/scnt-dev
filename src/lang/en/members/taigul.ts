@@ -9,7 +9,10 @@ export default {
       bio: "Biography",
     },
     bioTitle: "Professional Biography",
-    bioText:
-      "Graduated from Al-Farabi Kazakh National University with a degree in History; historian and lecturer of History and Social Studies.",
+    bioText:`
+Aigul Abilmazhinovna Tursunova is a Human Resources Manager at LLP "Scientific Center for New Technologies".
+
+She has professional experience in personnel management, HR administration, and organizational support of team activities. She currently serves as the Human Resources Manager at Scientific Center for New Technologies, ensuring effective employee interaction and supporting internal processes.
+  `,
   },
 };

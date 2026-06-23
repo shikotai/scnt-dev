@@ -41,7 +41,7 @@ const AnuarbekovaNazerke: React.FC = () => {
           {activeTab === "bio" && (
             <>
               <h3>{t("anazerke.bioTitle")}</h3>
-              <p>{t("anazerke.bioText")}</p>
+              <p style={{ whiteSpace: "pre-line" }}>{t("anazerke.bioText")}</p>
             </>
           )}
 

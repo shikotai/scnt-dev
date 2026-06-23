@@ -58,6 +58,11 @@ const GabdullinaAiman: React.FC = () => {
           {activeTab === "publications" && (
             <p style={{ whiteSpace: "pre-line" }}>{t("aimang.publicationsText ")}</p>
           )}
+
+          
+          {activeTab === "publications" && (
+            <div dangerouslySetInnerHTML={{ __html: t("kapizov.publicationslist") }} />
+          )}
         </div>
       </section>
 

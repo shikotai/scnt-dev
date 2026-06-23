@@ -13,7 +13,6 @@ import saknur from "./members/saknur"
 import mutushev from "./members/m-alibek"
 import dauren from "./members/dauren";
 import kapizov from "./members/kapizov";
-import aksuluk from "./members/aksuluk";
 import asadyk from "./members/asadyk";
 import ainurm from "./members/ainurm";
 import aimang from "./members/aimang";
@@ -30,9 +29,16 @@ import sandugasho from "./members/sandugasho";
 import aitzhan from "./members/aitzhan";
 import khalima from "./members/khalima";
 import dianak from "./members/dianak";
-import gulnara from "./members/gulnara";
 import zhanat from "./members/zhanat";
-import alfiya from "./members/alfiya";
+import saida from "./members/saida";
+import switzerlandNews from "./news/switzerland-news";
+import berdibais from "./members/berdibais";
+import beijingNews from "./news/beijing-news";
+import urumqiNews from "./news/urumqi-news";
+import referendum from "./news/referendum";
+import msaida from "./members/msaida";
+import partners from "./partners/partners";
+import astanaNews from "./news/astana-news";
 
 export default {
   ...common,
@@ -50,7 +56,6 @@ export default {
   ...mutushev,
   ...dauren,
   ...kapizov,
-  ...aksuluk,
   ...asadyk,
   ...ainurm,
   ...aimang,
@@ -66,8 +71,15 @@ export default {
   ...sandugasho,
   ...dianak,
   ...khalima,
-  ...gulnara,
   ...zhanat,
-  ...alfiya,
-  ...buyout
+  ...buyout,
+  ...referendum,
+  ...switzerlandNews,
+  ...saida,
+  ...beijingNews,
+  ...berdibais,
+  ...urumqiNews,
+  ...msaida,
+  ...partners,
+  ...astanaNews,
 };

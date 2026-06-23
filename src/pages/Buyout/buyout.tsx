@@ -7,7 +7,7 @@ import { useLang } from "../../lang/context/LanguageContext";
 type BuyoutFile = {
   label: string;
   href: string;
-  type?: "pdf" | "docx";
+  type?: "pdf" | "docx" | "video";
 };
 
 type BuyoutProtocol = {
@@ -21,18 +21,55 @@ const Buyout: React.FC = () => {
   const [openId, setOpenId] = useState<string | null>(null);
 
   const protocols: BuyoutProtocol[] = [
-    {
-      id: "protocol-2025-plan",
-      protocolTitleKey: "buyout.protocols.plan2025",
-      files: [
-        {
-          label: t("buyout.files.protocol1"),
-          href: "/files/buyout/Протокол №1 от 04.08.2025_0001.pdf",
-          type: "pdf",
-        },
-      ],
-    },
-  ];
+  {
+    id: "protocol-2025-plan",
+    protocolTitleKey: "buyout.protocols.plan2025",
+    files: [
+      {
+        label: t("buyout.files.protocol1"),
+        href: "/files/buyout/Протокол №1 от 04.08.2025_0001.pdf",
+        type: "pdf",
+      },
+      {
+        label: t("buyout.files.protocol2"),
+        href: "/files/buyout/20260121123017.pdf",
+        type: "pdf",
+      }
+    ],
+  },
+  {
+    id: "protocol-2026-plan",
+    protocolTitleKey: "buyout.protocols.plan2026",
+    files: [
+      {
+        label: t("buyout.files.protocol3"),
+        href: "/files/buyout/Протокол заседания комиссии 01 от 12.01.2026.pdf",
+        type: "pdf",
+      },
+
+      {
+        label: t("buyout.files.protocol4"),
+        href: "/files/buyout/Протокол 2 (1).pdf",
+        type: "pdf",
+      },
+      {
+        label: t("buyout.files.protocol5"),
+        href: "/files/buyout/Протокол 3.pdf",
+        type: "pdf",
+      },
+      {
+        label: t("buyout.files.protocol7"),
+        href: "/files/buyout/Протокол 4.pdf",
+        type: "pdf",
+      },
+      {
+        label: t("buyout.files.protocol8"),
+        href: "/files/buyout/Протокол 5.pdf",
+        type: "pdf",
+      },
+    ],
+  }
+];
 
   const toggle = (id: string) => {
     setOpenId(prev => (prev === id ? null : id));
@@ -44,6 +81,8 @@ const Buyout: React.FC = () => {
         return "📕";
       case "docx":
         return "📄";
+      case "video":
+        return "▶";
       default:
         return "📎";
     }

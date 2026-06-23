@@ -13,7 +13,7 @@ export default {
     },
     bioTitle: "Professional Biography",
     bioText: `
-Seisenova Aknur Berdibaevna, PhD, is a leading researcher in the field of new materials and technologies at the Research Institute of New Chemical Technologies and Materials, Al-Farabi Kazakh National University. She is a recognized expert in the development and implementation of innovative materials.
+Seisenova Aknur Berdibaevna, PhD, is a leading researcher in the field of new materials and technologies at the LLP "Scientific Center for New Technologies". She is a recognized expert in the development and implementation of innovative materials.
 
 Her main research areas include the synthesis, investigation, and application of functional silicon- and carbon-containing materials, as well as the development of processing methods for industrial and agricultural waste to obtain valuable composites and nanomaterials. Her research focuses on creating technologically feasible and environmentally safe solutions for energy, materials science, and industrial chemistry.
 

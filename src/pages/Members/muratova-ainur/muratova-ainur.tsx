@@ -4,7 +4,7 @@ import Footer from "../../../components/Footer/Footer";
 import { useLang } from "../../../lang/context/LanguageContext";
 import "./members.css";
 
-const MuratovaAigerim: React.FC = () => {
+const MuratovaAinur: React.FC = () => {
   const { t } = useLang();
   const [activeTab, setActiveTab] = useState<"bio" | "projects" | "publications">("bio");
 
@@ -20,12 +20,12 @@ const MuratovaAigerim: React.FC = () => {
           ></div>
 
           <div className="profile-info">
-            <h2 className="profile-name">{t("aigerimm.name")}</h2>
-            <p className="profile-position">{t("aigerimm.position")}</p>
+            <h2 className="profile-name">{t("ainurm.name")}</h2>
+            <p className="profile-position">{t("ainurm.position")}</p>
             <p className="profile-email">
               Email:{" "}
-              <a href={`mailto:${t("aigerimm.email")}`}>
-                {t("aigerimm.email")}
+              <a href={`mailto:${t("ainurm.email")}`}>
+                {t("ainurm.email")}
               </a>
             </p>
           </div>
@@ -37,7 +37,7 @@ const MuratovaAigerim: React.FC = () => {
             className={activeTab === "bio" ? "active" : ""}
             onClick={() => setActiveTab("bio")}
           >
-            {t("aigerimm.tabs.bio")}
+            {t("ainurm.tabs.bio")}
           </button>
         </div>
 
@@ -45,8 +45,8 @@ const MuratovaAigerim: React.FC = () => {
         <div className="profile-content">
           {activeTab === "bio" && (
             <>
-              <h3>{t("aigerimm.bioTitle")}</h3>
-              <p>{t("aigerimm.bioText")}</p>
+              <h3>{t("ainurm.bioTitle")}</h3>
+              <p style={{ whiteSpace: "pre-line" }}>{t("ainurm.bioText")}</p>
             </>
           )}
         </div>
@@ -57,4 +57,4 @@ const MuratovaAigerim: React.FC = () => {
   );
 };
 
-export default MuratovaAigerim;
+export default MuratovaAinur;

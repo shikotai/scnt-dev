@@ -74,11 +74,18 @@ export default {
           paper13:
             "Certificate of registration in the State Register of Rights to Copyright-Protected Objects No. 64505 dated 24.11.2025",
           paper14:
-            "Application for a Republic of Kazakhstan utility model patent No. 2025/1428.2 dated 24.09.2025",
+            "Utility Model Patent No. 11857 dated 06.03.2026",
 
           paper15: "Certificate: Kapizov O.K. FORA-10-24-0026898",
           paper16: "Certificate: Seisenova A.B. FORA-10-24-0026898",
           paper17: "Certificate: Oryngaliyeva S. FORA-10-24-0026898",
+
+          paper18: 'Article in the Journal CJES, vol. 24 p. 371-384.',
+          paper19: 'Article in the Journal CJES, vol. 24, p. 615-622',
+
+          paper20: 'Application for a useful model dated 26.03.2026',
+          paper21: 'Application for an invention dated 23.04.2026',
+
         },
       },
     },

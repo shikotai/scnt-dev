@@ -34,16 +34,136 @@ const Br28713383: React.FC = () => {
       link: "/members/kapizov-omirzak",
     },
     {
+      name: t("sandugasho.name"),
+      position: t("sandugasho.position"),
+      image: "/images/members/oryngalieva-sandugash.png",
+      link: "/members/oryngalieva-sandugash"
+    },
+    {
       name: t("dauren.name"),
       position: t("dauren.position"),
       image: "/images/members/mukhanov-dauren.jpg",
       link: "/members/dauren-mukhanov",
     },
     {
+      name: t("nasiya.name"),
+      position: t("nasiya.position"),
+      image: "/images/members/nuraly-asiya.jpg",
+      link: "/members/nuraly-asiya",
+    },
+    { 
+      name: t("ainurm.name"),
+      position: t("ainurm.position"),
+      image: "/images/members/muratova-aigerim.png",
+      link: "/members/muratova-ainur"
+    },
+    { 
+      name: t("aimang.name"),
+      position: t("aimang.position"),
+      image: "/images/members/gabdullina-aiman.png",
+      link:"/members/gabdullina-aiman"
+    },
+    { 
+      name: t("asadyk.name"),
+      position: t("asadyk.position"),
+      image: "/images/members/asadyk.png",
+      link: "/members/sadyk-aliman"
+    },
+    {
+      name: t("dianak.name"),
+      position: t("dianak.position"),
+      image: "/images/members/kokenaeva-diana.png",
+      link: "/members/kokenaeva-diana"
+    },
+    {
+      name: t("tzhanar.name"),
+      position: t("tzhanar.position"),
+      image: "/images/members/turatpekova-zhanar.png",
+      link: "/members/turatpekova-zhanar"
+    },
+    {
+      name: t("saida.name"),
+      position: t("saida.position"),
+      image: "/images/members/sanap-aida.png",
+      link: "/members/sanat-aida"
+    },
+    {
+      name: t("berdibais.name"),
+      position: t("berdibais.position"),
+      image: "/images/members/seisenov-berdibai.jpg",
+      link: "/members/seisenov-berdibai"
+    },
+    {
+      name: t("serzhan.name"),
+      position: t("serzhan.position"),
+      image: "/images/members/seisenov-erzhan.jpg",
+      link: "/members/seisenov-erzhan"
+    },
+    {
+      name: t("amira.name"),
+      position: t("amira.position"),
+      image: "/images/members/aitkalikyzy-mira.jpg",
+      link: "/members/aitkalikyzy-mira"
+    },
+    {
+      name: t("khalima.name"),
+      position: t("khalima.position"),
+      image: "/images/members/manap-khalima.jpg",
+      link: "/members/manap-khalima"
+    },
+    {
+      name: t("gaidarb.name"),
+      position: t("gaidarb.position"),
+      image: "/images/members/burashev-gaidar.jpg",
+      link: "/members/burashev-gaidar"
+    },
+    {
+      name: t("aitzhan.name"),
+      position: t("aitzhan.position"),
+      image: "/images/members/aitzhan-mentai.png",
+      link: "/members/aitzhan-mentai"
+    },
+    {
+      name: t("aidam.name"),
+      position: t("aidam.position"),
+      image: "/images/members/manap-aida.jpg",
+      link: "/members/manap-aida"
+    },
+    {
+      name: t("msaida.name"),
+      position: t("msaida.position"),
+      image: "/images/members/placeholder.jpg",
+      link: "/members/mukhanova-saida"
+    },
+    {
+      name: t("zhanat.name"),
+      position: t("zhanat.position"),
+      image: "/images/members/zhanat.png",
+      link: "/members/myshyrova-zhanat"
+    },
+    {
+      name: t("ayazhans.name"),
+      position: t("ayazhans.position"),
+      image: "/images/members/sanuar-ayazhan.jpg",
+      link: "/members/sanuar-ayazhan"
+    },
+    {
       name: t("ualis.name"),
       position: t("ualis.position"),
       image: "/images/members/ualis.png",
       link: "/members/uali-shynybek",
+    },
+    {
+      name: t("anazerke.name"),
+      position: t("anazerke.position"),
+      image: "/images/members/anuarbekova-nazerke.jpg",
+      link: "/members/anuarbekova-nazerke"
+    },
+    {
+      name: t("taigul.name"),
+      position: t("taigul.position"),
+      image: "/images/members/tursunova-aigul.jpg",
+      link: "/members/tursunova-aigul",
     },
   ];
 
@@ -210,7 +330,7 @@ const Br28713383: React.FC = () => {
 
               <li>
                 <a
-                  href="/files/project1/Vestnik Shakarim (4) 2025 SCNT.pdf"
+                  href="/files/project1/Vectnik Shakarim (4) 2025 SCNT.pdf"
                   download
                 >
                   {t("project_br28713383.sections.publications.list.paper4")}
@@ -219,12 +339,27 @@ const Br28713383: React.FC = () => {
 
               <li>
                 <a
-                  href="files/project1/Тезис-1.pdf"
+                  href="/files/project1/Тезис-1.pdf"
                   download
                 >
                   {t("project_br28713383.sections.publications.list.paper2")}
                 </a>
               </li>
+              <li>
+                <a
+                  href="/files/project1/CJES_Volume 24_Issue 2_Pages 371-384.pdf"
+                  download
+                  >
+                    {t("project_br28713383.sections.publications.list.paper18")}
+                  </a>
+              </li>
+              <li>
+                <a
+                  href="/files/project1/CJES_Volume 24_Issue 2_Pages 615-622.pdf"
+                  download>
+                    {t("project_br28713383.sections.publications.list.paper19")}
+                  </a>
+              </li> 
             </ul>
           )}
         </div>
@@ -309,14 +444,26 @@ const Br28713383: React.FC = () => {
                 </a>
               </li>
               <li>
-                <a href="/files/project1/Заявление (6).pdf" download>
+                <a href="/files/project1/Патент на ПМ №11684 от 24.09.2025 (покрытие).pdf" download>
                   {t("project_br28713383.sections.publications.list.paper6")}
                 </a>
               </li>
 
               <li>
-                <a href="/files/project1/Заявление (8).pdf" download>
+                <a href="/files/project1/Патент на ПМ №11857 от 06.03.2026.pdf" download>
                   {t("project_br28713383.sections.publications.list.paper14")}
+                </a>
+              </li>
+
+              <li>
+                <a href="/files/project1/Заявление на ПМ 26.03.2026.pdf" download>
+                  {t("project_br28713383.sections.publications.list.paper20")}
+                </a>
+              </li>
+
+              <li>
+                <a href="/files/project1/Заявление на изобретение 23.04.2026.pdf" download>
+                  {t("project_br28713383.sections.publications.list.paper21")}
                 </a>
               </li>
             </ul>

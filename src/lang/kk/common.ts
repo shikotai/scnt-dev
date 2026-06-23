@@ -5,6 +5,7 @@ export default {
     projects: "Жобалар",
     members:"Қызметкерлер",
     buyout: "Сатып алу",
+    partners: "Серіктестер"
   },
   lang: {
     ru: "Рус",

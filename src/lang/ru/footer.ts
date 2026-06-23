@@ -7,12 +7,13 @@ export default {
       projects: "Проекты",
       members: "Сотрудники",
       buyout: "Закупка",
+      partners: "Партнеры"
     },
     contact: {
       addressLabel: "Адрес:",
       addressValue: "Казахстан, г. Алматы, пр. Абая, 191",
       phoneLabel: "Номер:",
-      phoneValue: "+7 (705) 522-10-54",
+      phoneValue: "+7 (747) 628 23 60",
       emailLabel: "Email:",
       emailValue: "scnt.kz@gmail.com",
     },

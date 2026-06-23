@@ -32,8 +32,6 @@ const KapizovOmirzak: React.FC = () => {
               {t("kapizov.position")}, {t("kapizov.degree")}
             </p>
 
-            <p className="profile-organization">{t("kapizov.organization")}</p>
-
             <p className="profile-index">
               H-index: <span className="highlight">{t("kapizov.hindex")}</span>
             </p>

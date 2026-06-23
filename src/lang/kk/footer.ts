@@ -7,12 +7,13 @@ export default {
       projects: "Жобалар",
       members: "Қызметкерлер",
       buyout: "Сатып алу",
+      partners: "Cеріктестер"
     },
     contact: {
       addressLabel: "Мекенжай:",
       addressValue: "Қазақстан, Алматы қ., Абай даңғ., 191",
       phoneLabel: "Телефон:",
-      phoneValue: "+7 (705) 522-10-54",
+      phoneValue: "+7 (747) 628 23 60",
       emailLabel: "Email:",
       emailValue: "scnt.kz@gmail.com",
     },

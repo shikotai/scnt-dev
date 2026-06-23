@@ -1,3 +1,5 @@
+import partners from "./partners/partners";
+
 export default {
   nav: {
     about: "О нас",
@@ -5,6 +7,7 @@ export default {
     projects: "Проекты",
     members: "Сотрудники",
     buyout: "Закуп",
+    partners: "Партнёры"
   },
   lang: {
     ru: "Рус",

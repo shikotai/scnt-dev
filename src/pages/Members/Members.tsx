@@ -23,7 +23,7 @@ const Members: React.FC = () => {
     },
     {
       name: t("kapizov.name"),
-      position: `${t("kapizov.position")}, ${t("kapizov.degree")}`,
+      position: t("kapizov.position"),
       image: "/images/members/kapizov-omirzak.jpg",
       link: "/members/kapizov-omirzak",
     },
@@ -35,27 +35,27 @@ const Members: React.FC = () => {
     },
     {
       name: t("dauren.name"),
-      position: `${t("dauren.position")}, ${t("dauren.degree")}`,
+      position: t("dauren.position"),
       image: "/images/members/mukhanov-dauren.jpg",
       link: "/members/dauren-mukhanov",
     },
     {
       name: t("nasiya.name"),
-      position: `${t("nasiya.position")}, ${t("nasiya.degree")}`,
+      position: t("nasiya.position"),
       image: "/images/members/nuraly-asiya.jpg",
       link: "/members/nuraly-asiya",
     },
     { 
-      name: t("aigerimm.name"),
-      position: t("aigerimm.position"),
+      name: t("ainurm.name"),
+      position: t("ainurm.position"),
       image: "/images/members/muratova-aigerim.png",
-      link: "/members/muratova-aigerim"
+      link: "/members/muratova-ainur"
     },
     { 
       name: t("aimang.name"),
       position: t("aimang.position"),
       image: "/images/members/gabdullina-aiman.png",
-      link:"/members/gabdillina-aiman"
+      link:"/members/gabdullina-aiman"
     },
     { 
       name: t("asadyk.name"),
@@ -74,6 +74,18 @@ const Members: React.FC = () => {
       position: t("tzhanar.position"),
       image: "/images/members/turatpekova-zhanar.png",
       link: "/members/turatpekova-zhanar"
+    },
+    {
+      name: t("saida.name"),
+      position: t("saida.position"),
+      image: "/images/members/sanap-aida.png",
+      link: "/members/sanat-aida"
+    },
+    {
+      name: t("berdibais.name"),
+      position: t("berdibais.position"),
+      image: "/images/members/seisenov-berdibai.jpg",
+      link: "/members/seisenov-berdibai"
     },
     {
       name: t("serzhan.name"),
@@ -112,22 +124,16 @@ const Members: React.FC = () => {
       link: "/members/manap-aida"
     },
     {
-      name: t("gulnara.name"),
-      position: t("gulnara.position"),
-      image: "/images/members/gulnara.jpg",
-      link: "/members/abdikadirova-gulnara",
+      name: t("msaida.name"),
+      position: t("msaida.position"),
+      image: "/images/members/placeholder.jpg",
+      link: "/members/mukhanova-saida"
     },
     {
       name: t("zhanat.name"),
       position: t("zhanat.position"),
       image: "/images/members/zhanat.png",
       link: "/members/myshyrova-zhanat"
-    },
-    {
-      name: t("alfiya.name"),
-      position: t("alfiya.position"),
-      image: "/images/members/alfiya.png",
-      link: "/members/berdieva-alfiya"
     },
     {
       name: t("ayazhans.name"),
@@ -140,12 +146,6 @@ const Members: React.FC = () => {
       position: t("ualis.position"),
       image: "/images/members/ualis.png",
       link: "/members/uali-shynybek",
-    },
-    { 
-      name: t("aksuluk.name"),
-      position: t("aksuluk.position"),
-      image: "/images/members/kaldybekova-aksulu.jpg",
-      link: "/members/kaldybekova-aksulu"
     },
     {
       name: t("anazerke.name"),

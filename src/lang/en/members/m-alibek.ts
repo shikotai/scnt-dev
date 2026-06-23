@@ -18,18 +18,13 @@ export default {
 
     bioTitle: "Professional Biography",
     bioText: `
-Alibek Zhumabekovich Mutushev, PhD, is a Leading Researcher at the Scientific Center for New Technologies (AlAkSan) and an Assistant Professor at the Department of Chemistry, Chemical Technology, and Ecology of Almaty Technological University.
+Alibek Zhumabekovich Mutushev, PhD, is a Leading Researcher at the Scientific Center for New Technologies and an Assistant Professor at the Department of Chemistry, Chemical Technology, and Ecology of Almaty Technological University.
 
 His main research focus is on the development, synthesis, and modification of nanostructured materials, as well as the study of their chemical, physicochemical, and biomedical properties. Mutushev A.Z.’s work is aimed at expanding the practical application of functional materials in pharmaceuticals, environmental protection, energy-saving technologies, and biomedicine.
 
 He has extensive experience in transferring research results into industrial practice and possesses strong organizational skills. His scientific activity is focused on efficient processing of natural resources, development of new materials and technologies, enhancement of environmental safety, and advancement of life sciences.
 
 Author of more than 90 scientific works, including 15 articles published in international peer-reviewed journals indexed in Scopus; holder of 42 patents.  
-Scopus Author ID: 57220810792  
-Researcher ID: N-6736-2017  
-ORCID: 0000-0002-5047-5608  
-H-index: Scopus = 4, WoS = 3  
-SciProfiles: 1745633
     `,
 
     projectslist:
@@ -84,7 +79,7 @@ SciProfiles: 1745633
   <li>
     <b>Full list of scientific works and patents</b><br>
     Microsoft Word (DOCX) document containing all publications, patents, and certificates.<br>
-    <a href="/files/mutushev/Мутушев А.Ж.-список научных трудов.docx" target="_blank" rel="noopener noreferrer" download>
+    <a href="/files/mutushev/Мутушев А.Ж.-список научных трудов.doc" target="_blank" rel="noopener noreferrer" download>
       📄 Download file (DOCX)
     </a>
   </li><br>
@@ -127,7 +122,7 @@ SciProfiles: 1745633
   <li>
     <b>Full list of scientific works and patents</b><br>
     Microsoft Word (DOCX) document containing all publications, patents, and certificates.<br>
-    <a href="/files/mutushev/Мутушев А.Ж.-список научных трудов.docx" target="_blank" rel="noopener noreferrer" download>
+    <a href="/files/mutushev/Мутушев А.Ж.-список научных трудов.doc" target="_blank" rel="noopener noreferrer" download>
       📄 Download file (DOCX)
     </a>
   </li><br>
@@ -150,7 +145,7 @@ SciProfiles: 1745633
   <li>
     <b>Full list of scientific works and patents</b><br>
     Microsoft Word (DOCX) document containing all publications, patents, and certificates.<br>
-    <a href="/files/mutushev/Мутушев А.Ж.-список научных трудов.docx" target="_blank" rel="noopener noreferrer" download>
+    <a href="/files/mutushev/Мутушев А.Ж.-список научных трудов.doc" target="_blank" rel="noopener noreferrer" download>
       📄 Download file (DOCX)
     </a>
   </li><br>

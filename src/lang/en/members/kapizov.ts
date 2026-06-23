@@ -18,7 +18,7 @@ export default {
     },
 
     bioTitle: "Professional Biography",
-    bioText: `Omirzak Sembiuliy Kapizov, MSc, is a Senior Researcher at the Research Institute of New Chemical Technologies and Materials of Al-Farabi Kazakh National University (RSE Al-Farabi KazNU).
+    bioText: `Omirzak Sembiuliy Kapizov, MSc, is a Senior Researcher at the LLP "Scientific Center for New Technologies".
 
 His main research focus is related to the development and scaling of technologies for processing bio- and mining–metallurgical industry waste to obtain highly efficient carbon–silicon materials used in modern energy storage systems.
 

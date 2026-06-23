@@ -4,7 +4,7 @@ import Footer from "../../../components/Footer/Footer";
 import { useLang } from "../../../lang/context/LanguageContext";
 import "./members.css";
 
-const AnuarbekovaNazerke: React.FC = () => {
+const BerdievaAlfiya: React.FC = () => {
   const { t } = useLang();
   const [activeTab, setActiveTab] = useState<"bio" >("bio");
 
@@ -53,4 +53,4 @@ const AnuarbekovaNazerke: React.FC = () => {
   );
 };
 
-export default AnuarbekovaNazerke;
+export default BerdievaAlfiya;

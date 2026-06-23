@@ -27,7 +27,6 @@ const NavigationHeader: React.FC = () => {
           </div>
         </NavLink>
 
-        {/* ✅ Hamburger Menu Button */}
         <button
           className={`menu-toggle ${menuOpen ? "open" : ""}`}
           onClick={() => setMenuOpen((prev) => !prev)}
@@ -43,21 +42,28 @@ const NavigationHeader: React.FC = () => {
           <NavLink to="/about" onClick={() => setMenuOpen(false)}>
             {t("nav.about") as string}
           </NavLink>
+
           <NavLink to="/news" onClick={() => setMenuOpen(false)}>
             {t("nav.news") as string}
           </NavLink>
+
           <NavLink to="/projects" onClick={() => setMenuOpen(false)}>
             {t("nav.projects") as string}
           </NavLink>
-          {/* ✅ New "Members" button */}
+
           <NavLink to="/members" onClick={() => setMenuOpen(false)}>
             {t("nav.members") as string}
           </NavLink>
+
+          <NavLink to="/partners" onClick={() => setMenuOpen(false)}>
+            {t("nav.partners") as string}
+          </NavLink>
+
           <NavLink to="/buyout" onClick={() => setMenuOpen(false)}>
             {t("nav.buyout") as string}
           </NavLink>
 
-          {/* ✅ Language Switcher */}
+
           <div className="lang-toggle">
             <button
               onClick={() => changeLang("kk")}
@@ -66,6 +72,7 @@ const NavigationHeader: React.FC = () => {
             >
               <span className="fi fi-kz"></span>
             </button>
+
             <button
               onClick={() => changeLang("en")}
               className={`lang-btn ${lang === "en" ? "active" : ""}`}
@@ -73,6 +80,7 @@ const NavigationHeader: React.FC = () => {
             >
               <span className="fi fi-us"></span>
             </button>
+
             <button
               onClick={() => changeLang("ru")}
               className={`lang-btn ${lang === "ru" ? "active" : ""}`}
@@ -80,8 +88,6 @@ const NavigationHeader: React.FC = () => {
             >
               <span className="fi fi-ru"></span>
             </button>
-
-            
           </div>
         </nav>
       </div>

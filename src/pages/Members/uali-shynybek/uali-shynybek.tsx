@@ -47,7 +47,7 @@ const UaliShynybek: React.FC = () => {
           {activeTab === "bio" && (
             <>
               <h3>{t("ualis.bioTitle")}</h3>
-              <p>{t("ualis.bioText")}</p>
+              <p style={{ whiteSpace: "pre-line" }}>{t("ualis.bioText")}</p>
             </>
           )}
 
