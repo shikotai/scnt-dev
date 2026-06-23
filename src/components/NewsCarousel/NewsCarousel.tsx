@@ -9,6 +9,14 @@ const NewsCarousel: React.FC = () => {
 
   const newsData = [
     {
+      title: t("newsPage.items.AstanaSymposium.title"),
+      description: t("newsPage.items.AstanaSymposium.description"),
+      image: "/images/news/astana-news/astananews1.jpeg",
+      date: t("newsPage.items.AstanaSymposium.date"),
+      link: "/news/astana-news",
+      button: t("newsPage.items.AstanaSymposium.button"),
+    },
+    {
       title: t("newsPage.items.Beijing.title"),
       description: t("newsPage.items.Beijing.description"),
       image: "/images/news/beijing-news/mingje.jpg",

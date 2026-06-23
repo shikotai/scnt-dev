@@ -2,74 +2,95 @@ export default {
   newsCarousel: {
     title: "News",
     items: {
-      japanCollab: {
-        title: "Joint Collaboration with Japan",
+      AstanaSymposium: {
+        title: "Participation in an International Symposium in Astana",
         description:
-          "The results of the trip to Japan have been summarized and directions for further scientific cooperation have been determined.",
+          "A representative of SCNT participated in the 5th International Symposium on Emerging Materials and Devices and held meetings with scientists from the United Kingdom and Malaysia.",
+        date: "June 17–18, 2026",
+        button: "Read more",
+      },
+      japanCollab: {
+        title: "Joint Cooperation with Japan",
+        description:
+          "The results of the business trip to Japan were summarized, and directions for further scientific cooperation were identified.",
         date: "October 10, 2025",
         button: "Read more",
       },
-      Switzerland:{
+      Switzerland: {
         title: "ICMRP-25 Conference",
         date: "November 21, 2025",
         description:
-          "Presentation by SCNT employees at the international conference ICMRP-2025.",
+          "SCNT employees presented their work at the international ICMRP-2025 conference.",
         button: "Read more",
       },
-      Beijing:{
+      Beijing: {
         title: "Business Trip to China",
         date: "March 19, 2026",
-        description:"Trip of the SCNT delegation to seek new partners in China.",
-        button: "Read more"
+        description:
+          "SCNT delegation visited China to search for new partners.",
+        button: "Read more",
       },
-      Urumqi:{
+      Urumqi: {
         title: "Scientific Cooperation with China",
         date: "March 19, 2026",
-        description: "Study of the electrochemical properties of carbon materials at Xinjiang University.",
+        description:
+          "Study of the electrochemical properties of carbon materials at Xinjiang University.",
         button: "Read more",
       },
       Referendum: {
         title: "Republican Referendum and SCNT",
         date: "March 16, 2026",
-        description: "SCNT employees voted in the Republican Referendum.",
-        button: "Read more"
+        description:
+          "SCNT employees took part in voting during the Republican Referendum.",
+        button: "Read more",
       },
     },
   },
+
   newsPage: {
     title: "News and Research",
     items: {
-      japanCollab: {
-        title: "Joint Collaboration with Japan",
+      AstanaSymposium: {
+        title: "Participation in an International Symposium in Astana",
         description:
-          "The results of the trip to Japan have been summarized and directions for further scientific cooperation have been determined.",
+          "A representative of SCNT participated in the 5th International Symposium on Emerging Materials and Devices and held meetings with scientists from the United Kingdom and Malaysia.",
+        date: "June 17–18, 2026",
+        button: "Read more",
+      },
+      japanCollab: {
+        title: "Joint Cooperation with Japan",
+        description:
+          "The results of the business trip to Japan were summarized, and directions for further scientific cooperation were identified.",
         date: "October 10, 2025",
         button: "Read more",
       },
-      Switzerland:{
+      Switzerland: {
         title: "ICMRP-25 Conference",
         date: "November 21, 2025",
         description:
-          "Presentation by SCNT employees at the international conference ICMRP-2025.",
+          "SCNT employees presented their work at the international ICMRP-2025 conference.",
         button: "Read more",
       },
-      Beijing:{
+      Beijing: {
         title: "Business Trip to China",
         date: "March 19, 2026",
-        description:"Trip of the SCNT delegation to seek new partners in China.",
-        button: "Read more"
+        description:
+          "SCNT delegation visited China to search for new partners.",
+        button: "Read more",
       },
-      Urumqi:{
+      Urumqi: {
         title: "Scientific Cooperation with China",
         date: "March 19, 2026",
-        description: "Study of the electrochemical properties of carbon materials at Xinjiang University.",
+        description:
+          "Study of the electrochemical properties of carbon materials at Xinjiang University.",
         button: "Read more",
       },
       Referendum: {
         title: "Republican Referendum and SCNT",
         date: "March 16, 2026",
-        description: "SCNT employees voted in the Republican Referendum.",
-        button: "Read more"
+        description:
+          "SCNT employees took part in voting during the Republican Referendum.",
+        button: "Read more",
       },
     },
   },

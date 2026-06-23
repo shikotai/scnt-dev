@@ -10,12 +10,20 @@ const News: React.FC = () => {
 
   const newsData = [
     {
+      title: t("newsPage.items.AstanaSymposium.title"),
+      description: t("newsPage.items.AstanaSymposium.description"),
+      image: "/images/news/astana-news/astananews1.jpeg",
+      date: t("newsPage.items.AstanaSymposium.date"),
+      link: "/news/astana-news",
+      button: t("newsPage.items.AstanaSymposium.button"),
+    },
+    {
       title: t("newsPage.items.Beijing.title"),
       description: t("newsPage.items.Beijing.description"),
       image: "/images/news/beijing-news/mingje.jpg",
       date: t("newsPage.items.Beijing.date"),
       link: "/news/beijing-news",
-      button: t("newsPage.items.Beijing.button")
+      button: t("newsPage.items.Beijing.button"),
     },
     {
       title: t("newsPage.items.Urumqi.title"),
@@ -23,15 +31,15 @@ const News: React.FC = () => {
       image: "/images/news/urumqi-news/lab3.jpg",
       date: t("newsPage.items.Urumqi.date"),
       link: "/news/urumqi-news",
-      button: t("newsPage.items.Urumqi.button")
+      button: t("newsPage.items.Urumqi.button"),
     },
     {
       title: t("newsPage.items.Referendum.title"),
       description: t("newsPage.items.Referendum.description"),
-      image: "images/news/referendum/referndum2.jpeg",
+      image: "/images/news/referendum/referndum2.jpeg",
       date: t("newsPage.items.Referendum.date"),
       link: "/news/referendum",
-      button: t("newsPage.items.Referendum.button")
+      button: t("newsPage.items.Referendum.button"),
     },
     {
       title: t("newsPage.items.Switzerland.title"),
@@ -49,7 +57,6 @@ const News: React.FC = () => {
       link: "/news/japan-news",
       button: t("newsPage.items.japanCollab.button"),
     },
-
   ];
 
   return (
