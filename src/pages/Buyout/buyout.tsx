@@ -21,58 +21,32 @@ const Buyout: React.FC = () => {
   const [openId, setOpenId] = useState<string | null>(null);
 
   const protocols: BuyoutProtocol[] = [
-  {
-    id: "protocol-2025-plan",
-    protocolTitleKey: "buyout.protocols.plan2025",
-    files: [
-      {
-        label: t("buyout.files.protocol1"),
-        href: "/files/buyout/Протокол №1 от 04.08.2025_0001.pdf",
-        type: "pdf",
-      },
-      {
-        label: t("buyout.files.protocol2"),
-        href: "/files/buyout/20260121123017.pdf",
-        type: "pdf",
-      }
-    ],
-  },
-  {
-    id: "protocol-2026-plan",
-    protocolTitleKey: "buyout.protocols.plan2026",
-    files: [
-      {
-        label: t("buyout.files.protocol3"),
-        href: "/files/buyout/Протокол заседания комиссии 01 от 12.01.2026.pdf",
-        type: "pdf",
-      },
-
-      {
-        label: t("buyout.files.protocol4"),
-        href: "/files/buyout/Протокол 2 (1).pdf",
-        type: "pdf",
-      },
-      {
-        label: t("buyout.files.protocol5"),
-        href: "/files/buyout/Протокол 3.pdf",
-        type: "pdf",
-      },
-      {
-        label: t("buyout.files.protocol7"),
-        href: "/files/buyout/Протокол 4.pdf",
-        type: "pdf",
-      },
-      {
-        label: t("buyout.files.protocol8"),
-        href: "/files/buyout/Протокол 5.pdf",
-        type: "pdf",
-      },
-    ],
-  }
-];
+    {
+      id: "protocol-2025-plan",
+      protocolTitleKey: "buyout.protocols.plan2025",
+      files: [
+        {
+          label: t("buyout.files.plan1"),
+          href: "/files/buyout/plan2025.PDF",
+          type: "pdf",
+        },
+      ],
+    },
+    {
+      id: "protocol-2026-plan",
+      protocolTitleKey: "buyout.protocols.plan2026",
+      files: [
+        {
+          label: t("buyout.files.plan2"),
+          href: "/files/buyout/plan2026.PDF",
+          type: "pdf",
+        },
+      ],
+    },
+  ];
 
   const toggle = (id: string) => {
-    setOpenId(prev => (prev === id ? null : id));
+    setOpenId((prev) => (prev === id ? null : id));
   };
 
   const icon = (type?: BuyoutFile["type"]) => {
@@ -88,53 +62,63 @@ const Buyout: React.FC = () => {
     }
   };
 
+  const getDownloadName = (href: string) => {
+    return href.split("/").pop() || "download";
+  };
+
   return (
     <div className="buyout-page">
       <NavigationHeader />
 
-      {/* HEADER */}
       <section className="buyout-hero">
         <h1 className="buyout-title">{t("buyout.title")}</h1>
         <p className="buyout-subtitle">{t("buyout.subtitle")}</p>
       </section>
 
-      {/* PROTOCOL LIST */}
       <section className="buyout-content">
         <div className="buyout-container">
-          {protocols.map(protocol => {
+          {protocols.map((protocol) => {
             const isOpen = openId === protocol.id;
 
             return (
               <div key={protocol.id} className="buyout-item">
                 <button
+                  type="button"
                   className={`buyout-card ${isOpen ? "open" : ""}`}
                   onClick={() => toggle(protocol.id)}
                   aria-expanded={isOpen}
+                  aria-controls={`${protocol.id}-dropdown`}
                 >
                   <span className="buyout-card-title">
                     {t(protocol.protocolTitleKey)}
                   </span>
 
-                  <span className={`buyout-chevron ${isOpen ? "open" : ""}`}>
+                  <span
+                    className={`buyout-chevron ${isOpen ? "open" : ""}`}
+                    aria-hidden="true"
+                  >
                     ▾
                   </span>
                 </button>
 
-                <div className={`buyout-dropdown ${isOpen ? "open" : ""}`}>
+                <div
+                  id={`${protocol.id}-dropdown`}
+                  className={`buyout-dropdown ${isOpen ? "open" : ""}`}
+                >
                   <ul className="buyout-files">
                     {protocol.files.map((file, idx) => (
-                      <li key={idx} className="buyout-file-item">
+                      <li key={`${file.href}-${idx}`} className="buyout-file-item">
                         <span className="buyout-file-dot" />
+
                         <a
                           href={file.href}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          download
+                          download={getDownloadName(file.href)}
                           className="buyout-file-link"
                         >
                           <span className="buyout-file-icon">
                             {icon(file.type)}
                           </span>
+
                           {file.label}
                         </a>
                       </li>
