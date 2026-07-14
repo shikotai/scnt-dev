@@ -456,7 +456,7 @@ const Br28713383: React.FC = () => {
               </li>
 
               <li>
-                <a href="/files/project1/Заявление на ПМ 26.03.2026.pdf" download>
+                <a href="/files/project1/Патент на ПМ №12586.pdf" download>
                   {t("project_br28713383.sections.publications.list.paper20")}
                 </a>
               </li>
