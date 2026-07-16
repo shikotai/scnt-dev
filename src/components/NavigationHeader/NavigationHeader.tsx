@@ -51,10 +51,6 @@ const NavigationHeader: React.FC = () => {
             {t("nav.projects") as string}
           </NavLink>
 
-          <NavLink to="/members" onClick={() => setMenuOpen(false)}>
-            {t("nav.members") as string}
-          </NavLink>
-
           <NavLink to="/partners" onClick={() => setMenuOpen(false)}>
             {t("nav.partners") as string}
           </NavLink>

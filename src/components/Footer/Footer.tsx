@@ -20,7 +20,6 @@ const Footer: React.FC = () => {
             <a href="/about">{t("footer.nav.about")}</a>
             <a href="/news">{t("footer.nav.news")}</a>
             <a href="/projects">{t("footer.nav.projects")}</a>
-            <a href="/members">{t("footer.nav.members")}</a>
             <a href="/buyout">{t("footer.nav.buyout")}</a>
             <a href="/partners">{t("footer.nav.partners")}</a>
           </nav>

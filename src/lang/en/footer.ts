@@ -13,7 +13,7 @@ export default {
       addressLabel: "Address:",
       addressValue: "Kazakhstan, Almaty, Abay Ave., 191",
       phoneLabel: "Phone:",
-      phoneValue: "+7 (747) 628 23 60",
+      phoneValue: "+7 701 482 1820",
       emailLabel: "Email:",
       emailValue: "scnt.kz@gmail.com",
     },

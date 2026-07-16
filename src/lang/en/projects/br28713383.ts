@@ -45,7 +45,7 @@ export default {
           articles: "Scientific articles and publications",
           certificates:
             "Certificates of registration in the State Register of Rights to Copyright-Protected Objects.",
-          patents: "Utility model patents",
+          patents: "Intellectual Property",
           icmrp:
             "Presentation certificates from the International Conference on Interdisciplinary Research and Practices (ICMRP-2025).",
         },
@@ -83,7 +83,7 @@ export default {
           paper18: 'Article in the Journal CJES, vol. 24 p. 371-384.',
           paper19: 'Article in the Journal CJES, vol. 24, p. 615-622',
 
-          paper20: 'Application for a useful model dated 26.03.2026',
+          paper20: 'Utility Model Patent No. 12586 dated 26.03.2026',
           paper21: 'Application for an invention dated 23.04.2026',
 
         },

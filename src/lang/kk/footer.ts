@@ -13,7 +13,7 @@ export default {
       addressLabel: "Мекенжай:",
       addressValue: "Қазақстан, Алматы қ., Абай даңғ., 191",
       phoneLabel: "Телефон:",
-      phoneValue: "+7 (747) 628 23 60",
+      phoneValue: "+7 701 482 1820",
       emailLabel: "Email:",
       emailValue: "scnt.kz@gmail.com",
     },

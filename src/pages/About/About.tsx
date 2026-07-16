@@ -57,11 +57,6 @@ const About: React.FC = () => {
               <li>{t("about.sections.team.list.masters")}</li>
               <li>{t("about.sections.team.list.specialists")}</li>
             </ul>
-
-            {/* ➕ ADD THIS BUTTON */}
-            <Link to="/members" className="about-members-btn">
-              {t("about.sections.team.button")}
-            </Link>
           </div>
 
     <div
