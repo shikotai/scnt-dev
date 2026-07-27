@@ -46,6 +46,8 @@ export default {
     paper2: "Тезис для презентации на ICMRP-25 (2025)",
     paper3: "Статья в журнале «Физико-химические науки» (2025)",
     paper4: "Вестник Shakarim (№4, 2025, SCNT)",
+    paper22: 'Статья №1 в "Academic Journal of Physical and Chemical Sciences" (изд. №2,2026)',
+    paper23: 'Статья №2 в "Academic Journal of Physical and Chemical Sciences" (изд. №2,2026)',
 
     paper5: "Патент на ПМ №11441 от 24.09.2025",
     paper6: "Патент на ПМ №11684 от 24.09.2025",

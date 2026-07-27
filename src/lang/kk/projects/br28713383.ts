@@ -86,6 +86,9 @@ export default {
           paper20: 'Пайдалы модельге патент №12586, 26.03.2026',
           paper21: 'Өнертабысқа патент өтінімі 23.04.2026',
 
+          paper22: '"Academic Journal of Physical and Chemical Sciences" журналында мақала №1 (изд. №2,2026)',
+          paper23: '"Academic Journal of Physical and Chemical Sciences" журналында мақала №2 (изд. №2,2026)',
+
         },
       },
     },

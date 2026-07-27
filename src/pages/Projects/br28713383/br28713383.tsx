@@ -180,6 +180,21 @@ const Br28713383: React.FC = () => {
                     {t("project_br28713383.sections.publications.list.paper19")}
                   </a>
               </li> 
+              <li>
+                <a
+                  href="/files/project1/КОКНВО Доклады НАН РК (Акимбаева А).pdf"
+                  download>
+                    {t("project_br28713383.sections.publications.list.paper22")}
+                  </a>
+              </li>
+              <li>
+                <a
+                  href="/files/project1/КОКНВО Доклады НАН РК (Манап К).pdf"
+                  download>
+                    {t("project_br28713383.sections.publications.list.paper23")}
+                  </a>
+              </li>
+              
             </ul>
           )}
         </div>

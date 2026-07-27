@@ -86,6 +86,9 @@ export default {
           paper20: 'Utility Model Patent No. 12586 dated 26.03.2026',
           paper21: 'Application for an invention dated 23.04.2026',
 
+          paper22: 'Article No. 1 in "Academic Journal of Physical and Chemical Sciences" (vol. №2,2026)',
+          paper23: 'Article No. 2 in "Academic Journal of Physical and Chemical Sciences" (vol. №2,2026)',
+
         },
       },
     },
