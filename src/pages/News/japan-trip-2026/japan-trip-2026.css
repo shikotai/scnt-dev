@@ -1,0 +1,211 @@
+/* =========================================================
+   JAPAN TRIP 2026
+   Uses the standard SCNT news styles
+   ========================================================= */
+
+
+/* ===============================
+   TITLE
+   =============================== */
+
+.japan-trip-title {
+  padding-top: 30px;
+  padding-bottom: 45px;
+}
+
+.japan-trip-title h2 {
+  max-width: 1200px;
+
+  margin-bottom: 15px;
+}
+
+.japan-trip-title h1 {
+  margin: 0;
+
+  color: #555555;
+
+  font-size: 14px;
+  font-weight: 400;
+
+  text-transform: none;
+}
+
+
+/* ===============================
+   SECTION TITLES
+   =============================== */
+
+.news-page .news-content h3 {
+  margin-top: 0;
+  margin-bottom: 18px;
+
+  color: #0b1533;
+
+  font-size: 22px;
+  line-height: 1.4;
+
+  font-weight: 400;
+}
+
+
+/* ===============================
+   JAPAN IMAGES
+   =============================== */
+
+.japan-trip-image {
+  height: 320px;
+
+  background-position: center;
+}
+
+
+/*
+  Use this class if japan2.jpg is the
+  BR28713383 presentation/poster.
+*/
+
+.japan-trip-presentation {
+  height: 360px;
+
+  background-size: contain;
+  background-repeat: no-repeat;
+
+  background-color: #ffffff;
+}
+
+
+/* ===============================
+   TEXT
+   =============================== */
+
+.news-page .news-content p {
+  margin-top: 0;
+  margin-bottom: 18px;
+
+  font-size: 18px;
+  line-height: 1.6;
+
+  text-align: justify;
+}
+
+.news-page .news-content p:last-child {
+  margin-bottom: 0;
+}
+
+
+/* ===============================
+   RESULTS LIST
+   =============================== */
+
+.japan-trip-list {
+  margin: 20px 0 0;
+
+  padding-left: 22px;
+
+  color: #333333;
+
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+.japan-trip-list li {
+  margin-bottom: 10px;
+}
+
+.japan-trip-list li:last-child {
+  margin-bottom: 0;
+}
+
+
+/* ===============================
+   FINAL TEXT
+   =============================== */
+
+.japan-trip-final-content {
+  max-width: 900px;
+}
+
+.japan-trip-final-content h3 {
+  text-align: center;
+}
+
+
+/* ===============================
+   TABLETS
+   =============================== */
+
+@media (max-width: 992px) {
+  .japan-trip-image {
+    height: 280px;
+  }
+
+  .japan-trip-presentation {
+    height: 330px;
+  }
+
+  .news-page .news-content h3 {
+    font-size: 20px;
+  }
+
+  .news-page .news-content p,
+  .japan-trip-list {
+    font-size: 16px;
+  }
+}
+
+
+/* ===============================
+   PHONES
+   =============================== */
+
+@media (max-width: 768px) {
+  .japan-trip-title {
+    padding-top: 30px;
+    padding-bottom: 35px;
+  }
+
+  .japan-trip-image {
+    width: 100%;
+    max-width: 100%;
+
+    height: 250px;
+  }
+
+  .japan-trip-presentation {
+    height: 330px;
+  }
+
+  .news-page .news-content h3 {
+    text-align: center;
+  }
+
+  .japan-trip-list {
+    text-align: left;
+  }
+}
+
+
+/* ===============================
+   SMALL PHONES
+   =============================== */
+
+@media (max-width: 480px) {
+  .japan-trip-image {
+    height: 210px;
+  }
+
+  .japan-trip-presentation {
+    height: 280px;
+  }
+
+  .news-page .news-content h3 {
+    font-size: 18px;
+  }
+
+  .news-page .news-content p,
+  .japan-trip-list {
+    font-size: 14px;
+
+    line-height: 1.5;
+  }
+}

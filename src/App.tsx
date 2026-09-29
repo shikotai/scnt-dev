@@ -49,6 +49,7 @@ import SeisenovB from "./pages/Members/seisenov-berdibai/seisenov-berdibai";
 import SanatAida from "./pages/Members/sanat-aida/sanat-aida";
 import MukhanovaSaida from "./pages/Members/mukhanova-saida/mukhanova-saida";
 
+import JapanTrip2026 from "./pages/News/japan-trip-2026/japan-trip-2026";
 import Buyout from "./pages/Buyout/buyout";
 import Partners from "./pages/Partners/partners";
 
@@ -83,6 +84,8 @@ const App: React.FC = () => {
           path="/news/astana-news"
           element={<AstanaSymposiumNews />}
         />
+
+        <Route path="/news/japan-trip-2026" element={<JapanTrip2026 />} />
 
         {/* Disable old public members URLs */}
         <Route path="/members" element={<Navigate to="/" replace />} />
@@ -221,6 +224,8 @@ const App: React.FC = () => {
           path={`${MEMBERS_PATH}/berdieva-alfiya`}
           element={<BerdievaAlfiya />}
         />
+
+       
 
         {/* Unknown URLs return to home */}
         <Route path="*" element={<Navigate to="/" replace />} />

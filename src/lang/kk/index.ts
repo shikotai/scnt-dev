@@ -38,6 +38,7 @@ import urumqiNews from "./news/urumqi-news";
 import referendum from "./news/referendum";
 import partners from "./partners/partners";
 import astanaNews from "./news/astana-news";
+import JapanTrip2026 from "./news/japan-trip-2026";
 
 export default {
   ...common,
@@ -80,5 +81,5 @@ export default {
   ...urumqiNews,
   ...partners,
   ...astanaNews,
-
+  JapanTrip2026,
 };

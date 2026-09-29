@@ -1,3 +1,5 @@
+import JapanTrip2026 from "./japan-trip-2026";
+
 export default {
   newsCarousel: {
     title: "Жаңалықтар",
@@ -90,6 +92,13 @@ export default {
         date: "2026 жылғы 16 наурыз",
         description:
           "SCNT қызметкерлері Республикалық референдумда дауыс беруге қатысты.",
+        button: "Толығырақ",
+      },
+      japanTrip2026: {
+        title: "SCNT делегациясының Жапонияға ғылыми сапары",
+        date: "2026 жылғы 8 қыркүйек",
+        description:
+          "SCNT делегациясының Саппоро қаласына ғылыми сапары.",
         button: "Толығырақ",
       },
     },

@@ -88,6 +88,9 @@ export default {
 
           paper22: 'Article No. 1 in "Academic Journal of Physical and Chemical Sciences" (vol. №2,2026)',
           paper23: 'Article No. 2 in "Academic Journal of Physical and Chemical Sciences" (vol. №2,2026)',
+          paper24: 'Article  in "Academic Journal of Physical and Chemical Sciences" (vol. №3,2026)',
+
+          paper25: 'Article in "ES Energy & Environment", 2026'
 
         },
       },

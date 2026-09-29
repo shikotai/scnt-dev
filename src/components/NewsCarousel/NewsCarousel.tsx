@@ -9,6 +9,14 @@ const NewsCarousel: React.FC = () => {
 
   const newsData = [
     {
+      title: t("newsPage.items.japanTrip2026.title"),
+      description: t("newsPage.items.japanTrip2026.description"),
+      image: "/images/news/japan-trip-2026/japan1.jpeg",
+      date: t("newsPage.items.japanTrip2026.date"),
+      link: "/news/japan-trip-2026",
+      button: t("newsPage.items.japanTrip2026.button"),
+    },
+    {
       title: t("newsPage.items.AstanaSymposium.title"),
       description: t("newsPage.items.AstanaSymposium.description"),
       image: "/images/news/astana-news/astananews1.jpeg",
@@ -56,6 +64,8 @@ const NewsCarousel: React.FC = () => {
       link: "/news/japan-news",
       button: t("newsPage.items.japanCollab.button"),
     },
+    
+
   ];
 
   return (

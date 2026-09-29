@@ -92,6 +92,13 @@ export default {
           "SCNT employees took part in voting during the Republican Referendum.",
         button: "Read more",
       },
+      japanTrip2026:{
+        title: "Scientific Trip of SCNT to Japan",
+        date: "September 8, 2026",
+        desription: 
+          "SCNT delegation visited Japan, Sapporo for purposes of scientific cooperation.",
+        button: "Read more",
+      },
     },
   },
 };

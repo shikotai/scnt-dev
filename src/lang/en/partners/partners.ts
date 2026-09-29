@@ -64,7 +64,7 @@ const partners = {
         name: "KazEcoAnalysis",
         description:
           "KazEcoAnalysis, a specialized research and design company, provides a wide range of services in the field of nature management, environmental protection, and sanitary hygiene.",
-        website: "https://kazecoanalysis.kz/ru/o-kompanii"
+        website: "https://kazecoanalysis.kz/en/"
       }
     },
 

@@ -65,7 +65,7 @@ const partners = {
         name: "КазЭкоАнализ",
         description:
           "«КазЭкоАнализ» мамандандырылған ғылыми-зерттеу және жобалау компаниясы табиғатты пайдалану, қоршаған ортаны қорғау, санитарлық гигиена салаларында кең ауқымды қызмет көрсетеді.",
-        website: "https://kazecoanalysis.kz/ru/o-kompanii"
+        website: "https://kazecoanalysis.kz/"
       }
     },
 

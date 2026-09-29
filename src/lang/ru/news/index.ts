@@ -1,3 +1,5 @@
+import JapanTrip2026 from "./japan-trip-2026";
+
 export default {
   newsCarousel: {
     title: "Новости",
@@ -90,6 +92,13 @@ export default {
         description: "Сотрудники SCNT проголосовали в Республиканском референдуме.",
         button: "Подробнее",
       },
+      japanTrip2026: {
+        title: "Научная командировка в Японию",
+        date: "8 сентября 2026 года",
+        description: 
+          "Научная поездка делегации SCNT в Японию, г. Саппоро",
+        button: "Подробнее",
+      }
     },
   },
 };

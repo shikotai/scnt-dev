@@ -194,6 +194,20 @@ const Br28713383: React.FC = () => {
                     {t("project_br28713383.sections.publications.list.paper23")}
                   </a>
               </li>
+
+              <li>
+                <a
+                  href="/files/project1/CJES_Volume 24_Issue 3_Pages 975-981.pdf" download>
+                    {t("project_br28713383.sections.publications.list.paper24")}
+                  </a>
+              </li>
+
+              <li>
+                <a
+                  href="/files/project1/ee2464.pdf" download>
+                    {t("project_br28713383.sections.publications.list.paper25")}
+                </a>
+              </li>
               
             </ul>
           )}
