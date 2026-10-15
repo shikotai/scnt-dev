@@ -13,6 +13,7 @@ const Br28713383: React.FC = () => {
   const [openCertificates, setOpenCertificates] = useState(false);
   const [openPatents, setOpenPatents] = useState(false);
   const [openApplications, setOpenApplications] = useState(false);
+  const [openJapanCertificates, setOpenJapanCertificates] = useState(false);
 
   return (
     <div className="about-page">
@@ -319,39 +320,33 @@ const Br28713383: React.FC = () => {
           )}
         </div>
 
-        {/* ===== ICMRP ===== */}
+        {/* ===== CERTIFICATES ===== */}
         <div className="dropdown-card">
           <button
             className="dropdown-header"
             onClick={() => setOpenApplications((p) => !p)}
           >
-            🧾  {t("project_br28713383.sections.publications.groups.icmrp")}
+            🧾  {t("project_br28713383.sections.publications.groups.membercertificates")}
             <span className={`arrow ${openApplications ? "open" : ""}`}>▾</span>
           </button>
 
           {openApplications && (
             <ul className="publication-list dropdown-content">
               <li>
-                <a href="\files\project1\Сертификат-Kapizov Omirzak Sembiuly.pdf" download>
+                <a href="\files\project1\ICMRP Certificates.pdf" download>
                   {t("project_br28713383.sections.publications.list.paper15")}
                 </a>
               </li>
               <li>
-                <a href="\files\project1\Seisenova Aknur Berdibayevna-2.pdf" download>
+                <a href="\files\project1\Rakuno Gakuen Certificates.pdf" download>
                   {t("project_br28713383.sections.publications.list.paper16")}
                 </a>
-              </li>
-              <li>
-                <a href="\files\project1\Сертификат-Oryngaliyeva Sandugash.pdf" download>
-                  {t("project_br28713383.sections.publications.list.paper17")}
-                </a>
-              </li>
-              
+              </li>              
             </ul>
           )}
         </div>
-
       </div>
+      
     </div>
   </section>
 
