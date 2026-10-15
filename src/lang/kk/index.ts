@@ -39,6 +39,7 @@ import referendum from "./news/referendum";
 import partners from "./partners/partners";
 import astanaNews from "./news/astana-news";
 import JapanTrip2026 from "./news/japan-trip-2026";
+import equipment from "./equipment";
 
 export default {
   ...common,
@@ -82,4 +83,5 @@ export default {
   ...partners,
   ...astanaNews,
   JapanTrip2026,
+    ...equipment,
 };

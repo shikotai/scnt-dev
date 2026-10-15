@@ -1,3 +1,4 @@
+
 import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
 import "./NavigationHeader.css";
@@ -8,17 +9,34 @@ const NavigationHeader: React.FC = () => {
   const { lang, setLang, t } = useLang();
   const [menuOpen, setMenuOpen] = useState(false);
 
-  const changeLang = (newLang: "ru" | "en" | "kk") => {
-    if (newLang !== lang) setLang(newLang);
+  const closeMenu = () => {
     setMenuOpen(false);
+  };
+
+  const changeLang = (newLang: "ru" | "en" | "kk") => {
+    if (newLang !== lang) {
+      setLang(newLang);
+    }
+
+    closeMenu();
   };
 
   return (
     <header className="navigation-header">
       <div className="header-container">
-        {/* ✅ Logo (now links to home) */}
-        <NavLink to="/" className="logo-section" onClick={() => setMenuOpen(false)}>
-          <img src={logo} alt="Scientific Center Logo" className="logo" />
+
+        {/* LOGO */}
+        <NavLink
+          to="/"
+          className="logo-section"
+          onClick={closeMenu}
+        >
+          <img
+            src={logo}
+            alt="Scientific Center Logo"
+            className="logo"
+          />
+
           <div className="logo-text">
             <span className="title">Scientific</span>
             <span className="title">Center for</span>
@@ -27,63 +45,110 @@ const NavigationHeader: React.FC = () => {
           </div>
         </NavLink>
 
+        {/* MOBILE MENU BUTTON */}
         <button
+          type="button"
           className={`menu-toggle ${menuOpen ? "open" : ""}`}
           onClick={() => setMenuOpen((prev) => !prev)}
           aria-label={t("aria.toggleNavigation") as string}
+          aria-expanded={menuOpen}
+          aria-controls="main-navigation"
         >
           <span></span>
           <span></span>
           <span></span>
         </button>
 
-        {/* ✅ Navigation Links */}
-        <nav className={`nav-menu ${menuOpen ? "show" : ""}`}>
-          <NavLink to="/about" onClick={() => setMenuOpen(false)}>
+        {/* NAVIGATION */}
+        <nav
+          id="main-navigation"
+          className={`nav-menu ${menuOpen ? "show" : ""}`}
+        >
+
+          {/* ABOUT */}
+          <NavLink
+            to="/about"
+            onClick={closeMenu}
+          >
             {t("nav.about") as string}
           </NavLink>
 
-          <NavLink to="/news" onClick={() => setMenuOpen(false)}>
+          {/* EQUIPMENT */}
+          <NavLink
+            to="/equipment"
+            onClick={closeMenu}
+          >
+            {t("equipment.navTitle") as string}
+          </NavLink>
+
+          {/* NEWS */}
+          <NavLink
+            to="/news"
+            onClick={closeMenu}
+          >
             {t("nav.news") as string}
           </NavLink>
 
-          <NavLink to="/projects" onClick={() => setMenuOpen(false)}>
+          {/* PROJECTS */}
+          <NavLink
+            to="/projects"
+            onClick={closeMenu}
+          >
             {t("nav.projects") as string}
           </NavLink>
 
-          <NavLink to="/partners" onClick={() => setMenuOpen(false)}>
+          {/* PARTNERS */}
+          <NavLink
+            to="/partners"
+            onClick={closeMenu}
+          >
             {t("nav.partners") as string}
           </NavLink>
 
-          <NavLink to="/buyout" onClick={() => setMenuOpen(false)}>
+          {/* BUYOUT */}
+          <NavLink
+            to="/buyout"
+            onClick={closeMenu}
+          >
             {t("nav.buyout") as string}
           </NavLink>
 
-
+          {/* LANGUAGE SWITCHER */}
           <div className="lang-toggle">
+
             <button
+              type="button"
               onClick={() => changeLang("kk")}
               className={`lang-btn ${lang === "kk" ? "active" : ""}`}
               title={t("lang.kk") as string}
+              aria-label="Қазақша"
+              aria-pressed={lang === "kk"}
             >
               <span className="fi fi-kz"></span>
             </button>
 
             <button
+              type="button"
               onClick={() => changeLang("en")}
               className={`lang-btn ${lang === "en" ? "active" : ""}`}
               title={t("lang.en") as string}
+              aria-label="English"
+              aria-pressed={lang === "en"}
             >
               <span className="fi fi-us"></span>
             </button>
 
             <button
+              type="button"
               onClick={() => changeLang("ru")}
               className={`lang-btn ${lang === "ru" ? "active" : ""}`}
               title={t("lang.ru") as string}
+              aria-label="Русский"
+              aria-pressed={lang === "ru"}
             >
               <span className="fi fi-ru"></span>
             </button>
+
           </div>
         </nav>
       </div>

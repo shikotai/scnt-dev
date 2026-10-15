@@ -53,6 +53,8 @@ import JapanTrip2026 from "./pages/News/japan-trip-2026/japan-trip-2026";
 import Buyout from "./pages/Buyout/buyout";
 import Partners from "./pages/Partners/partners";
 
+import Equipment from "./pages/Equipment/Equipment";
+
 const MEMBERS_PATH = "/staff-directory-scnt-2026";
 
 const App: React.FC = () => {
@@ -225,10 +227,12 @@ const App: React.FC = () => {
           element={<BerdievaAlfiya />}
         />
 
-       
+        <Route path="/equipment" element={<Equipment />} />
 
         {/* Unknown URLs return to home */}
         <Route path="*" element={<Navigate to="/" replace />} />
+
+        
       </Routes>
     </Router>
   );
