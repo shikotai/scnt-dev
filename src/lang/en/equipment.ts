@@ -14,7 +14,7 @@ export default {
     labels: {
       application: "Research Applications",
       noPhoto: "Equipment photograph",
-      backButton: "Back to About Us",
+      backButton: "Back to the Project Page",
     },
     groups: {
       materials: {

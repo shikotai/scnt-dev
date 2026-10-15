@@ -14,7 +14,7 @@ export default {
     labels: {
       application: "Применение в исследованиях",
       noPhoto: "Фотография оборудования",
-      backButton: "Вернуться к разделу «О нас»",
+      backButton: "Вернуться к разделу о проекте",
     },
     groups: {
       materials: {

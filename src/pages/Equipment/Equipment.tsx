@@ -173,12 +173,6 @@ const Equipment: React.FC = () => {
             </div>
           </section>
         ))}
-
-        <div className="equipment-back-wrapper">
-          <Link to="/about" className="equipment-back-button">
-            {t("equipment.labels.backButton")}
-          </Link>
-        </div>
       </main>
 
       <Footer />

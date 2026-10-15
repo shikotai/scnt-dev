@@ -14,7 +14,7 @@ export default {
     labels: {
       application: "Зерттеулерде қолданылуы",
       noPhoto: "Жабдықтың фотосуреті",
-      backButton: "«Біз туралы» бөліміне оралу",
+      backButton: "Жоба бөліміне оралу",
     },
     groups: {
       materials: {
