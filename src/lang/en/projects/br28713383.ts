@@ -27,7 +27,7 @@ export default {
         title: "Head of the Organization",
         name: "Alibek Zhumabekovich Mutushev",
         position:
-          "Director of the Scientific Center for New Technologies; Leading Researcher at the Scientific Center for New Technologies, AlAkSan; Assistant Professor at the Department of Chemistry, Chemical Technology, and Ecology, Almaty Technological University.",
+          "Alibek Zhumabekovich Mutushev, PhD, Director of the Scientific Center for New Technologies. He is the author of over 50 scientific articles in leading journals and international collections (including 22 publications indexed in Scopus) and holds more than 65 patents.  ",
         image: "/images/members/mutushev-alibek.jpg",
       },
 
@@ -35,7 +35,7 @@ export default {
         title: "Project Leader",
         name: "Aknur Berdibaevna Seisenova",
         position:
-          "Leading researcher in the field of new materials and technologies at the Research Institute of New Chemical Technologies and Materials, Al-Farabi Kazakh National University. A recognized expert in the development and implementation of innovative materials.",
+          'Aknur Berdibayevna Seisenova, PhD, is a leading researcher in the field of new materials and technologies at "Scientific Center for New Technologies" LLP.',
         image: "/images/members/seisenova-aknur.jpeg",
       },
 

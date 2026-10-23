@@ -27,7 +27,7 @@ export default {
         title: "Руководитель организации",
         name: "Мутушев Алибек Жумабекович",
         position:
-          "Директор организации Scientific Center for New Technologies, ведущий научный сотрудник Scientific Center for New Technologies, AlAkSan, ассистент-профессор кафедры химии, химической технологии и экологии Алматинского технологического университета.",
+          "Мутушев Алибек Жумабекович, PhD, директор Scientific Center for New Technologies.  Автор более 50 научных статей в ведущих журналах и международных сборниках (в том числе 22 публикаций, индексируемых в Scopus), автор более 65 патентов.",
         image: "/images/members/mutushev-alibek.jpg",
       },
 
@@ -35,7 +35,7 @@ export default {
         title: "Руководитель проекта",
         name: "Сейсенова Акнур Бердибаевна",
         position:
-          "Ведущий научный сотрудник в области новых материалов и технологий, ДГП НИИ Новых химических технологий и материалов, РГП КазНУ имени аль-Фараби. Признанный эксперт в разработке и внедрении инновационных материалов.",
+          'Сейсенова Акнур Бердибаевна, PhD — ведущий научный сотрудник в области новых материалов и технологий в ТОО "Scientific Center for New Technologies".',
         image: "/images/members/seisenova-aknur.jpeg",
       },
 
@@ -96,7 +96,7 @@ export default {
 
           // ICMRP CERTIFICATES
           paper15: "Сертификаты о выступлении на ICMRP-2025.",
-          paper16: "Сертификат о прохождении научной стажировки в Rakuno Gakuen University",
+          paper16: "Сертификаты о прохождении научной стажировки в Rakuno Gakuen University",
 
           // OTHER PUBLICATIONS
           paper18:
